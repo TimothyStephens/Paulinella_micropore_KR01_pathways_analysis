@@ -1,0 +1,11 @@
+public static Colour? Format(object attribute)
+{
+    if (attribute is string colour)
+    {
+        return Colour.FromCSSString(colour);
+    }
+    else
+    {
+        return null;
+    }
+}

@@ -1,0 +1,717 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: /home/timothy/programs/iqtree-1.6.12-Linux/bin/iqtree -s K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln -nt AUTO -ntmax 6 -m LG+R7 -bb 2000 -nm 2000 -quiet
+Seed:    786287 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 12 19:48:46 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 173 sequences with 1274 columns, 716 distinct patterns
+287 parsimony-informative, 282 singleton sites, 705 constant sites
+WARNING: Some sequence names are changed as follows:
+Bacteria-Cyanobacteria-NA-Chroococcales-Chroococcaceae-Gloeocapsopsis_sp._AAB1_=_1H9_WP_105221700.1 -> Bacteria-Cyanobacteria-NA-Chroococcales-Chroococcaceae-Gloeocapsopsis_sp._AAB1___1H9_WP_105221700.1
+
+                                                                                                                                Gap/Ambiguity  Composition  p-value
+   1  Archaea-CandidatusMicrarchaeota-NA-NA-NA-Candidatus_Mancarchaeum_acidiphilum_WP_088819720.1                                      85.40%    failed      0.85%
+   2  Archaea-Crenarchaeota-Thermoprotei-Desulfurococcales-Desulfurococcaceae-Ignicoccus_hospitalis_WP_011998759.1                     88.46%    passed      9.69%
+   3  Archaea-Crenarchaeota-Thermoprotei-Desulfurococcales-Desulfurococcaceae-Thermogladius_calderae_WP_048163622.1                    89.09%    passed     11.54%
+   4  Archaea-Crenarchaeota-Thermoprotei-Sulfolobales-Sulfolobaceae-Acidianus_brierleyi_WP_110270379.1                                 88.54%    failed      4.38%
+   5  Archaea-Euryarchaeota-Archaeoglobi-Archaeoglobales-Archaeoglobaceae-Archaeoglobus_fulgidus_WP_010878270.1                        88.15%    passed     38.98%
+   6  Archaea-Euryarchaeota-Archaeoglobi-Archaeoglobales-Archaeoglobaceae-Ferroglobus_placidus_WP_012965135.1                          88.15%    passed      5.09%
+   7  Archaea-Euryarchaeota-Archaeoglobi-Archaeoglobales-Archaeoglobaceae-Geoglobus_acetivorans_WP_048092139.1                         88.23%    passed     83.89%
+   8  Archaea-Euryarchaeota-Methanomicrobia-Methanocellales-Methanocellaceae-Methanocella_arvoryzae_WP_012037332.1                     88.07%    passed     52.32%
+   9  Archaea-NA-NA-NA-NA-archaeon_AArcSl_WP_119815899.1                                                                               87.60%    failed      0.12%
+  10  Archaea-Thaumarchaeota-NA-NA-NA-Candidatus_Nitrosotalea_sinensis_WP_101009341.1                                                  89.56%    passed      7.79%
+  11  Archaea-Thaumarchaeota-NA-NA-NA-Marine_Group_I_thaumarchaeote_SCGC_AAA799D07_WP_048083785.1                                      89.64%    failed      0.87%
+  12  Archaea-Thaumarchaeota-NA-Nitrosopumilales-Nitrosopumilaceae-Candidatus_Nitrosomarinus_catalina_WP_086908107.1                   89.56%    passed     20.59%
+  13  Bacteria-Actinobacteria-Actinobacteria-Glycomycetales-Glycomycetaceae-Salilacibacter_sp._NKC35_WP_142091434.1                    89.72%    passed     62.82%
+  14  Bacteria-Actinobacteria-Actinobacteria-Micrococcales-Micrococcaceae-Rothia_nasimurium_WP_135011153.1                             89.17%    passed     34.77%
+  15  Bacteria-Actinobacteria-Actinobacteria-Streptosporangiales-Thermomonosporaceae-Actinomadura_kijaniata_WP_067829538.1             89.32%    failed      3.51%
+  16  Bacteria-Armatimonadetes-Armatimonadia-Capsulimonadales-Capsulimonadaceae-Capsulimonas_corticalis_WP_119322845.1                 89.64%    passed     81.31%
+  17  Bacteria-Armatimonadetes-Chthonomonadetes-Chthonomonadales-Chthonomonadaceae-Chthonomonas_calidirosea_WP_016482567.1             89.17%    passed      6.49%
+  18  Bacteria-CandidatusMelainabacteria-NA-CandidatusGastranaerophilales-NA-Candidatus_Gastranaerophilales_bacterium_WP_022023318.1   87.52%    passed     43.65%
+  19  Bacteria-CandidatusMelainabacteria-NA-NA-NA-Candidatus_Melainabacteria_bacterium_WP_144105561.1                                  87.60%    passed     88.31%
+  20  Bacteria-Chloroflexi-Anaerolineae-Anaerolineales-Anaerolineaceae-Anaerolinea_thermophila_WP_013560274.1                          88.07%    passed     86.36%
+  21  Bacteria-Chloroflexi-Anaerolineae-Anaerolineales-Anaerolineaceae-Pelolinea_submarina_WP_116224110.1                              87.91%    passed     47.91%
+  22  Bacteria-Chloroflexi-Anaerolineae-Anaerolineales-Anaerolineaceae-Thermanaerothrix_daxensis_WP_054522227.1                        88.15%    passed     34.60%
+  23  Bacteria-Chloroflexi-Caldilineae-Caldilineales-Caldilineaceae-Caldilinea_aerophila_WP_044276202.1                                88.38%    passed     32.49%
+  24  Bacteria-Cyanobacteria-NA-Chroococcales-Chroococcaceae-Gloeocapsopsis_sp._AAB1___1H9_WP_105221700.1                              88.30%    passed     69.41%
+  25  Bacteria-Cyanobacteria-NA-Oscillatoriales-Microcoleaceae-Planktothricoides_sp._SR001_WP_054464135.1                              88.30%    passed     79.29%
+  26  Bacteria-Cyanobacteria-NA-Synechococcales-Synechococcaceae-Synechococcus_lividus_WP_099799568.1                                  88.23%    passed     72.77%
+  27  Bacteria-Cyanobacteria-NA-Synechococcales-Synechococcaceae-Thermosynechococcus_vulcanus_WP_126984950.1                           88.23%    passed     79.44%
+  28  Bacteria-DeinococcusThermus-Deinococci-Thermales-Thermaceae-NA_WP_008630804.1                                                    89.25%    passed      8.12%
+  29  Bacteria-DeinococcusThermus-Deinococci-Thermales-Thermaceae-NA_WP_019550759.1                                                    89.25%    passed     18.46%
+  30  Bacteria-DeinococcusThermus-Deinococci-Thermales-Thermaceae-Thermus_scotoductus_WP_126203073.1                                   89.25%    passed     24.11%
+  31  Bacteria-DeinococcusThermus-Deinococci-Thermales-Thermaceae-Thermus_tengchongensis_WP_038041061.1                                89.25%    passed      9.66%
+  32  Bacteria-Firmicutes-Bacilli-Bacillales-Staphylococcaceae-Macrococcus_caseolyticus_WP_120787102.1                                 88.07%    passed     97.18%
+  33  Bacteria-Firmicutes-Clostridia-Thermoanaerobacterales-Thermoanaerobacteraceae-Carboxydothermus_ferrireducens_WP_028051727.1      88.30%    passed     44.98%
+  34  Bacteria-Firmicutes-Clostridia-Thermoanaerobacterales-Thermoanaerobacteraceae-Thermodesulfitimonas_autotrophica_WP_123930705.1   88.30%    passed     39.05%
+  35  Bacteria-Fusobacteria-Fusobacteriia-Fusobacteriales-Fusobacteriaceae-Hypnocyclicus_thermotrophus_WP_134113584.1                  87.91%    passed     27.58%
+  36  Bacteria-Fusobacteria-Fusobacteriia-Fusobacteriales-Leptotrichiaceae-Sebaldella_termitidis_WP_012860645.1                        88.23%    passed     37.83%
+  37  Bacteria-NA-NA-NA-NA-bacterium_JKG1_WP_026369192.1                                                                               88.15%    passed     37.25%
+  38  Bacteria-NA-NA-NA-NA-NA_WP_041613555.1                                                                                           88.30%    passed     33.60%
+  39  Bacteria-NA-NA-NA-NA-NA_WP_086038739.1                                                                                           88.38%    passed     22.01%
+  40  Bacteria-NA-NA-NA-NA-Thermobaculum_terrenum_WP_012875324.1                                                                       88.15%    passed     32.27%
+  41  Bacteria-Planctomycetes-NA-NA-NA-Planctomycetes_bacterium_Pan216_WP_145259724.1                                                  88.07%    passed     73.90%
+  42  Bacteria-Planctomycetes-Planctomycetia-Planctomycetales-Gemmataceae-Gemmata_obscuriglobus_WP_010050955.1                         88.23%    passed     21.03%
+  43  Bacteria-Proteobacteria-Gammaproteobacteria-Chromatiales-Chromatiaceae-Thiohalocapsa_sp._ML1_WP_058555170.1                      88.30%    passed     39.20%
+  44  Bacteria-Proteobacteria-Gammaproteobacteria-Pseudomonadales-Moraxellaceae-Acinetobacter_baumannii_WP_106474479.1                 87.99%    passed     99.35%
+  45  Bacteria-Spirochaetes-Spirochaetia-Spirochaetales-Spirochaetaceae-Treponema_sp._C6A8_WP_027727937.1                              88.46%    passed     96.89%
+  46  Bacteria-Tenericutes-Mollicutes-Mycoplasmatales-NA-endosymbiont_GvMRE_of_Glomus_versiforme_WP_147410216.1                        88.46%    passed     13.52%
+  47  Eukaryota-Acytosteliales-Acytosteliales-Acytosteliales-Acytosteliaceae-Acytostelium_subglobosum_XP_012757711.1                   82.50%    passed     18.18%
+  48  Eukaryota-Acytosteliales-Acytosteliales-Acytosteliales-Acytosteliaceae-Heterostelium_album_XP_020429889.1                        82.57%    passed     17.47%
+  49  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Glenodinium_foliaceum_MMETSP0119_c64417_g1_i1.p2                                     87.68%    passed     95.70%
+  50  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Oxyrrhis_marina_MMETSP0469_c30035_g1_i1.p1                                           81.87%    passed      8.14%
+  51  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Symbiodinium_sp_MMETSP1377_c129508_g1_i1.p2                                          86.26%    passed     79.78%
+  52  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Symbiodinium_sp_MMETSP1377_c136239_g1_i1.p1                                          82.89%    passed     43.62%
+  53  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Neoparamoeba_aestuarina_MMETSP0161_c15701_g1_i1.p2                                        80.77%    passed     40.00%
+  54  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Paramoeba_atlantica_MMETSP0151_c3370_g1_i1.p1                                             80.38%    passed     27.38%
+  55  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Stereomyxa_ramosa_MMETSP0439_c1121_g1_i1.p1                                               82.26%    failed      2.48%
+  56  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Vexillifera_sp_MMETSP0173_c2089_g1_i1.p1                                                  80.38%    failed      1.92%
+  57  Eukaryota-Annelida-Clitellata-Hirudinida-Glossiphoniidae-Helobdella_robusta_jgi185803                                            88.15%    passed     78.98%
+  58  Eukaryota-Apicomplexa-Conoidasida-Eucoccidiorida-Eimeriidae-Eimeria_tenella_XP_013228808.1                                       87.99%    passed     65.88%
+  59  Eukaryota-Apicomplexa-Conoidasida-Eucoccidiorida-Sarcocystidae-Neospora_caninum_XP_003879787.1                                   87.83%    passed     95.26%
+  60  Eukaryota-Apicomplexa-NA-Unranked-NA-Alveolata_sp_MMETSP0288_c3798_g1_i1.p1                                                      87.83%    passed     98.13%
+  61  Eukaryota-Apusomonadidae-NA-NA-NA-Thecamonas_trahens_XP_013755317.1                                                              87.91%    passed     77.77%
+  62  Eukaryota-Apusomonadidae-NA-NA-NA-Thecamonas_trahens_XP_013760616.1                                                              81.87%    failed      0.40%
+  63  Eukaryota-Arthropoda-Hexanauplia-Calanoida-Temoridae-Eurytemora_affinis_XP_023320553.1                                           88.07%    passed     99.54%
+  64  Eukaryota-Arthropoda-Insecta-Diptera-Culicidae-Anopheles_gambiae_XP_308641.4                                                     86.81%    passed     91.45%
+  65  Eukaryota-Arthropoda-Insecta-Hymenoptera-Agaonidae-Ceratosolen_solmsi_XP_011495776.1                                             87.76%    passed     80.36%
+  66  Eukaryota-Arthropoda-Insecta-Hymenoptera-Formicidae-Pogonomyrmex_barbatus_XP_011635433.1                                         86.66%    passed     72.59%
+  67  Eukaryota-Ascomycota-Dothideomycetes-Capnodiales-Mycosphaerellaceae-Sphaerulina_musiva_XP_016759742.1                            87.99%    passed     99.26%
+  68  Eukaryota-Ascomycota-Dothideomycetes-Dothideales-Saccotheciaceae-Aureobasidium_pullulans_XP_029762784.1                          87.91%    passed     99.29%
+  69  Eukaryota-Ascomycota-Eurotiomycetes-Eurotiales-Aspergillaceae-Aspergillus_fumigatus_XP_747995.1                                  87.99%    passed     99.76%
+  70  Eukaryota-Ascomycota-Eurotiomycetes-Onygenales-Arthrodermataceae-Trichophyton_rubrum_XP_003235504.1                              87.99%    passed     99.97%
+  71  Eukaryota-Basidiomycota-Microbotryomycetes-Sporidiobolales-Sporidiobolaceae-Rhodotorula_toruloides_XP_016276682.1                88.30%    passed     96.12%
+  72  Eukaryota-Basidiomycota-Microbotryomycetes-Undefined-Undefined-Sporobolomyces_roseus_jgi28081                                    88.38%    passed     83.21%
+  73  Eukaryota-Basidiomycota-Tremellomycetes-Trichosporonales-Trichosporonaceae-Trichosporon_asahii_XP_014176596.1                    82.34%    passed      9.40%
+  74  Eukaryota-Brachiopoda-Lingulata-Lingulida-Lingulidae-Lingula_anatina_XP_013415916.1                                              86.73%    passed     99.66%
+  75  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Gymnochlora_sp_MMETSP0110_c10727_g1_i1.p1                                          81.00%    passed     95.47%
+  76  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Lotharella_globosa_MMETSP0111_c6973_g1_i1.p2                                       80.85%    passed     12.92%
+  77  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Norrisiella_sphaerica_MMETSP0113_c7417_g1_i1.p1                                    81.79%    passed     61.53%
+  78  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Partenskyella_glossopodia_MMETSP1318_c24548_g1_i1.p1                               81.87%    passed      8.44%
+  79  Eukaryota-Chlorophyta-Mamiellophyceae-Mamiellales-Bathycoccaceae-Ostreococcus_RCC809_jgi41207                                    88.23%    passed     93.13%
+  80  Eukaryota-Chlorophyta-NA-NA-NA-Chlamydomonascf_sp_MMETSP1180_c6810_g1_i1.p1                                                      81.63%    failed      0.28%
+  81  Eukaryota-Chlorophyta-NA-NA-NA-Tetraselmis_striata_MMETSP0817_c5697_g1_i1.p2                                                     87.05%    passed     99.26%
+  82  Eukaryota-Chlorophyta-Trebouxiophyceae-Microthamniales-NA-Stichococcus_sp_MMETSP1473_c5339_g1_i1.p1                              87.76%    passed     48.83%
+  83  Eukaryota-Choanoflagellata-Choanoflagellata-Choanoflagellata-Salpingoecidae-Monosiga_brevicollis_XP_001742597.1                  88.07%    passed     77.17%
+  84  Eukaryota-Choanoflagellata-Choanoflagellata-Choanoflagellata-Salpingoecidae-Salpingoeca_rosetta_XP_004996287.1                   88.15%    passed     91.09%
+  85  Eukaryota-Chordata-Actinopteri-Gadiformes-Gadidae-Gadus_morhua_XP_030196575.1                                                    85.09%    passed     73.45%
+  86  Eukaryota-Chordata-Actinopteri-Gobiiformes-Gobiidae-Boleophthalmus_pectinirostris_XP_020783798.1                                 87.99%    passed     99.74%
+  87  Eukaryota-Chordata-Amphibia-Anura-Dicroglossidae-Nanorana_parkeri_XP_018414617.1                                                 87.91%    passed     94.41%
+  88  Eukaryota-Chordata-Ascidiacea-Enterogona-Cionidae-Ciona_intestinalis_XP_002123476.2                                              85.79%    passed     94.79%
+  89  Eukaryota-Chromeraceae-NA-NA-NA-Chromera_velia_MMETSP0290_c49631_g1_i1.p1                                                        81.32%    failed      2.32%
+  90  Eukaryota-Chromeraceae-NA-NA-NA-Vitrella_brassicaformis_MMETSP1451_c22584_g1_i1.p1                                               83.12%    failed      2.14%
+  91  Eukaryota-Chromeraceae-NA-NA-NA-Vitrella_brassicaformis_MMETSP1451_c31473_g1_i1.p1                                               88.38%    passed     98.57%
+  92  Eukaryota-Chytridiomycota-Chytridiomycetes-Rhizophydiales-NA-Batrachochytrium_dendrobatidis_jgi9385                              88.23%    passed     78.32%
+  93  Eukaryota-Chytridiomycota-Chytridiomycetes-Spizellomycetales-Spizellomycetaceae-Spizellomyces_punctatus_XP_016610515.1           85.48%    passed     49.40%
+  94  Eukaryota-Chytridiomycota-Chytridiomycetes-Spizellomycetales-Spizellomycetaceae-Spizellomyces_punctatus_XP_016611252.1           88.23%    passed     65.80%
+  95  Eukaryota-Ciliophora-NA-Unranked-NA-Climacostomum_virens_MMETSP1397_c2618_g1_i2.p1                                               87.28%    passed     93.03%
+  96  Eukaryota-Ciliophora-NA-Unranked-NA-Euplotes_focardii_MMETSP0206_TR14349-c0_g1_i1.p1                                             87.52%    passed     97.56%
+  97  Eukaryota-Ciliophora-NA-Unranked-NA-Pseudokeronopsis_sp_MMETSP1396_c23569_g1_i1.p2                                               87.68%    passed     61.51%
+  98  Eukaryota-Ciliophora-Oligohymenophorea-Hymenostomatida-NA-Ichthyophthirius_multifiliis_XP_004037462.1                            86.50%    failed      1.95%
+  99  Eukaryota-Cnidaria-Anthozoa-Actiniaria-Edwardsiidae-Nematostella_vectensis_XP_001630017.1                                        87.05%    passed     95.61%
+ 100  Eukaryota-Cnidaria-Anthozoa-Alcyonacea-Nephtheidae-Dendronephthya_gigantea_XP_028397640.1                                        88.07%    passed     79.01%
+ 101  Eukaryota-Cnidaria-Anthozoa-Scleractinia-Pocilloporidae-Pocillopora_damicornis_XP_027036435.1                                    74.73%    passed     34.82%
+ 102  Eukaryota-Cryptophyta-NA-Cryptomonadales-Cryptomonadaceae-Cryptomonas_curvata_MMETSP1050_c2173_g1_i1.p1                          87.83%    passed     97.17%
+ 103  Eukaryota-Cryptophyta-NA-Cryptomonadales-Hemiselmidaceae-Hemiselmis_virescens_MMETSP1356_c18302_g1_i1.p1                         88.07%    passed     94.08%
+ 104  Eukaryota-Cryptophyta-NA-Pyrenomonadales-Geminigeraceae-Guillardia_theta_MMETSP0046_c10355_g1_i1.p1                              87.60%    passed     78.87%
+ 105  Eukaryota-Cryptophyta-NA-Pyrenomonadales-Pyrenomonadaceae-Rhodomonas_salina_MMETSP1047_c36738_g1_i1.p1                           87.28%    passed     79.24%
+ 106  Eukaryota-Dictyosteliales-Dictyosteliales-Dictyosteliales-Dictyosteliaceae-Dictyostelium_purpureum_jgi93125                      82.65%    passed     16.26%
+ 107  Eukaryota-Diplomonadida-Diplomonadida-Diplomonadida-Hexamitidae-Giardia_intestinalis_XP_001706095.1                              88.15%    passed     85.46%
+ 108  Eukaryota-Echinodermata-Asteroidea-Valvatida-Acanthasteridae-Acanthaster_planci_XP_022086189.1                                   86.66%    passed     82.26%
+ 109  Eukaryota-Echinodermata-Echinoidea-Echinoida-Strongylocentrotidae-Strongylocentrotus_purpuratus_XP_799145.3                      85.87%    passed     26.23%
+ 110  Eukaryota-Euglenida-NA-Eutreptiales-NA-Eutreptiella_gymnastica_MMETSP0039_c22727_g1_i1.p1                                        69.31%    passed     14.19%
+ 111  Eukaryota-Euglenida-NA-NA-Unranked-Neobodo_designis_MMETSP1114_c6590_g1_i1.p2                                                    88.15%    passed     95.80%
+ 112  Eukaryota-Fonticulida-Fonticulida-Fonticulida-Fonticulaceae-Fonticula_alba_XP_009495451.1                                        88.15%    passed     85.61%
+ 113  Eukaryota-Glaucophyta-Glaucophyta-Gloeochaetales-Gloeochaetaceae-Gloeochaete_witrockiana_MMETSP0308_c3445_g1_i1.p2               81.87%    passed      6.10%
+ 114  Eukaryota-Glaucophyta-Glaucophyta-NA-Cyanophoraceae-Cyanophora_paradoxa_tig00001388_g8576.t1                                     82.26%    failed      2.18%
+ 115  Eukaryota-Glaucophyta-Glaucophyta-NA-NA-Cyanoptyche_gloeocystis_MMETSP1086_c830_g1_i1.p1                                         88.07%    passed     98.52%
+ 116  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Coccolithus_pelagicussspbraarudi_MMETSP0164_c37510_g1_i1.p1                              80.69%    failed      0.32%
+ 117  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Imantonia_sp_MMETSP1474_c2268_g1_i1.p1                                                   82.10%    passed     48.40%
+ 118  Eukaryota-Hemichordata-Enteropneusta-NA-Harrimaniidae-Saccoglossus_kowalevskii_XP_006823799.1                                    90.89%    passed     87.17%
+ 119  Eukaryota-Heterolobosea-NA-NA-NA-Percolomonas_cosmopolitus_MMETSP0758_c377_g1_i1.p1                                              87.05%    passed     69.72%
+ 120  Eukaryota-Heterolobosea-NA-NA-NA-Percolomonas_cosmopolitus_MMETSP0759_c4172_g1_i1.p1                                             88.30%    passed     45.42%
+ 121  Eukaryota-Heterolobosea-NA-NA-Vahlkampfiidae-Naegleria_gruberi_jgi72250                                                          88.15%    passed     66.22%
+ 122  Eukaryota-Kinetoplastida-Kinetoplastida-Kinetoplastida-Trypanosomatidae-Leishmania_braziliensis_XP_001567672.1                   81.24%    passed     46.67%
+ 123  Eukaryota-Kinetoplastida-Kinetoplastida-Kinetoplastida-Trypanosomatidae-Leptomonas_pyrrhocoris_XP_015663352.1                    88.15%    passed     98.51%
+ 124  Eukaryota-Kinetoplastida-Kinetoplastida-Kinetoplastida-Trypanosomatidae-Trypanosoma_grayi_XP_009313004.1                         87.99%    passed     97.30%
+ 125  Eukaryota-Longamoebia-Longamoebia-Longamoebia-Acanthamoebidae-Acanthamoeba_castellanii_XP_004337223.1                            81.48%    passed      9.37%
+ 126  Eukaryota-Mesomycetozoea-Ichthyosporea-Ichthyophonida-NA-Sphaeroforma_arctica_XP_014151457.1                                     88.30%    passed     90.51%
+ 127  Eukaryota-Mesomycetozoea-Ichthyosporea-NA-NA-Capsaspora_owczarzaki_XP_004365544.1                                                88.07%    passed     88.65%
+ 128  Eukaryota-Microsporidia-NA-NA-Ordosporidae-Ordospora_colligata_XP_014563533.1                                                    88.46%    passed     47.33%
+ 129  Eukaryota-Microsporidia-NA-NA-Unikaryonidae-Encephalitozoon_romaleae_XP_009264740.1                                              88.46%    passed     78.68%
+ 130  Eukaryota-Mollusca-Bivalvia-Ostreoida-Ostreidae-Crassostrea_gigas_XP_011449577.1                                                 86.81%    passed     97.94%
+ 131  Eukaryota-Mollusca-Bivalvia-Ostreoida-Ostreidae-Crassostrea_virginica_XP_022326223.1                                             86.81%    passed     99.81%
+ 132  Eukaryota-Mollusca-Gastropoda-Architaenioglossa-Ampullariidae-Pomacea_canaliculata_XP_025086205.1                                86.89%    passed     82.94%
+ 133  Eukaryota-Mollusca-Gastropoda-NA-Planorbidae-Biomphalaria_glabrata_XP_013079446.1                                                86.73%    passed     93.77%
+ 134  Eukaryota-Mucorales-Mucoraceae-Undefined-Undefined-Mucor_circinelloides_jgi95456                                                 82.18%    failed      4.36%
+ 135  Eukaryota-Mucoromycota-Mortierellomycetes-Mortierellales-Mortierellaceae-Lobosporangium_transversale_XP_021881841.1              88.23%    passed     63.36%
+ 136  Eukaryota-Mucoromycota-Mucoromycetes-Mucorales-Rhizopodaceae-Rhizopus_microsporus_XP_023464237.1                                 82.65%    passed     34.23%
+ 137  Eukaryota-Nematoda-Chromadorea-Rhabditida-Rhabditidae-Caenorhabditis_elegans_NP_492761.1                                         87.99%    passed    100.00%
+ 138  Eukaryota-Nematoda-Chromadorea-Rhabditida-Rhabditidae-Caenorhabditis_remanei_XP_003112004.1                                      85.71%    passed     99.30%
+ 139  Eukaryota-Nematoda-Chromadorea-Rhabditida-Strongyloididae-Strongyloides_ratti_XP_024505137.1                                     88.07%    passed     99.55%
+ 140  Eukaryota-Palpitomonas-NA-NA-NA-Palpitomonas_bilix_MMETSP0780_c10002_g1_i1.p1                                                    82.89%    passed     27.88%
+ 141  Eukaryota-Perkinsozoa-NA-Perkinsida-Perkinsidae-Perkinsus_marinus_MMETSP0922_c2698_g1_i1.p1                                      87.91%    passed     99.80%
+ 142  Eukaryota-Placozoa-NA-NA-Trichoplacidae-Trichoplax_adhaerens_XP_002115688.1                                                      88.15%    passed     34.53%
+ 143  Eukaryota-Platyhelminthes-Cestoda-Cyclophyllidea-Taeniidae-Echinococcus_granulosus_XP_024350751.1                                80.85%    passed     96.37%
+ 144  Eukaryota-Platyhelminthes-Trematoda-Opisthorchiida-Opisthorchiidae-Opisthorchis_viverrini_XP_009164012.1                         88.07%    passed     73.32%
+ 145  Eukaryota-Platyhelminthes-Trematoda-Strigeidida-Schistosomatidae-Schistosoma_haematobium_XP_012802225.1                          88.30%    passed     98.52%
+ 146  Eukaryota-Platyhelminthes-Trematoda-Strigeidida-Schistosomatidae-Schistosoma_mansoni_XP_018652599.1                              88.30%    passed     94.04%
+ 147  Eukaryota-Porifera-Demospongiae-Haplosclerida-Niphatidae-Amphimedon_queenslandica_jgiAqu1227720                                  84.54%    passed     97.06%
+ 148  Eukaryota-Priapulida-Priapulimorpha-Priapulimorphida-Priapulidae-Priapulus_caudatus_XP_014666017.1                               87.68%    passed     99.22%
+ 149  Eukaryota-Priapulida-Priapulimorpha-Priapulimorphida-Priapulidae-Priapulus_caudatus_XP_014675636.1                               86.58%    passed     99.03%
+ 150  Eukaryota-Retaria-NA-NA-NA-Ammonia_sp_MMETSP1384_c20581_g1_i1.p1                                                                 48.67%    failed      0.00%
+ 151  Eukaryota-Retaria-NA-NA-NA-Elphidium_margaritaceum_MMETSP1385_c14756_g1_i1.p1                                                    56.36%    failed      0.00%
+ 152  Eukaryota-Retaria-NA-NA-NA-Sorites_sp_MMETSP0191_c59021_g1_i1.p2                                                                 87.91%    passed     98.78%
+ 153  Eukaryota-Rhodophyta-Bangiophyceae-Porphyridiales-Porphyridiaceae-Porphyridium_purpureum_2025.35                                 87.99%    passed     54.48%
+ 154  Eukaryota-Rhodophyta-Compsopogonophyceae-NA-NA-Madagascaria_erythrocladiodes_MMETSP1450_c11683_g1_i1.p1                          83.91%    passed      6.72%
+ 155  Eukaryota-Rhodophyta-Compsopogonophyceae-NA-NA-Madagascaria_erythrocladiodes_MMETSP1450_c33458_g1_i1.p2                          87.68%    passed     76.20%
+ 156  Eukaryota-Stramenopiles-Fragilariophyceae-Cyclophorales-Cyclophoraceae-Astrosyne_radiata_MMETSP0418_c5413_g1_i1.p2               83.44%    passed     24.01%
+ 157  Eukaryota-Stramenopiles-NA-NA-NA-Bolidomonas_pacifica_MMETSP1319_c9292_g1_i1.p2                                                  82.10%    failed      1.44%
+ 158  Eukaryota-Stramenopiles-NA-NA-NA-Dactyliosolen_fragilissimus_MMETSP0580_c17601_g1_i1.p1                                          88.30%    passed     16.55%
+ 159  Eukaryota-Stramenopiles-Raphidophyceae-Chattonellales-Chattonellaceae-Chattonella_subsalsa_MMETSP0947_c27703_g1_i1.p1            82.10%    passed     81.06%
+ 160  Eukaryota-Streptophyta-NA-Asterales-Asteraceae-Cynara_cardunculus_XP_024993906.1                                                 81.40%    failed      3.73%
+ 161  Eukaryota-Streptophyta-NA-Fagales-Fagaceae-Quercus_suber_XP_023871141.1                                                          88.07%    passed    100.00%
+ 162  Eukaryota-Streptophyta-NA-Malvales-Malvaceae-Gossypium_raimondii_XP_012486660.1                                                  81.32%    passed     30.28%
+ 163  Eukaryota-Streptophyta-NA-Malvales-Malvaceae-Theobroma_cacao_XP_017973565.1                                                      63.34%    failed      0.00%
+ 164  Eukaryota-Trichomonadida-Trichomonadida-Trichomonadida-Trichomonadidae-Trichomonas_vaginalis_XP_001582343.1                      89.25%    passed     22.45%
+ 165  MSTRG.13723.1.p1                                                                                                                 81.87%    passed     44.76%
+ 166  MSTRG.7674.2.p1                                                                                                                  84.38%    passed     42.34%
+ 167  Paulinella_chromatophora_CCAC0185_nuclear___scaffold17589-m102663                                                                82.65%    passed     36.46%
+ 168  Paulinella_chromatophora_CCAC0185_nuclear___scaffold32198-m143874                                                                93.09%    passed     88.54%
+ 169  Paulinella_ovalis_nuclear_SingleCell___SAG3_contig01859.g1578.t1                                                                 93.88%    passed     95.39%
+ 170  Viruses-Alloherpesviridae-NA-NA-NA-Anguillid_herpesvirus_1_YP_003358229.2                                                        86.66%    passed     21.13%
+ 171  Viruses-Mimiviridae-NA-NA-NA-Acanthamoeba_polyphaga_mimivirus_YP_003986922.1                                                     89.25%    passed     28.50%
+ 172  Viruses-Mimiviridae-NA-NA-NA-Megavirus_chiliensis_YP_004894524.1                                                                 89.87%    passed     61.58%
+ 173  Viruses-Mimiviridae-NA-NA-NA-Moumouvirus_YP_007354373.1                                                                          87.91%    failed      0.03%
+WARNING: 172 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                                                                            86.01%  21 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.114 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 786287)...
+
+NOTE: 143 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 6 CPU cores
+5 trees examined
+Threads: 1 / Time: 6.281 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -47526
+Threads: 2 / Time: 6.145 sec / Speedup: 1.022 / Efficiency: 51% / LogL: -47526
+Threads: 3 / Time: 4.004 sec / Speedup: 1.569 / Efficiency: 52% / LogL: -47526
+Threads: 4 / Time: 3.381 sec / Speedup: 1.857 / Efficiency: 46% / LogL: -47526
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -43252.710
+2. Current log-likelihood: -38911.107
+3. Current log-likelihood: -38850.539
+4. Current log-likelihood: -38848.912
+5. Current log-likelihood: -38848.242
+6. Current log-likelihood: -38848.053
+7. Current log-likelihood: -38847.912
+8. Current log-likelihood: -38847.809
+Optimal log-likelihood: -38847.701
+Site proportion and rates:  (0.088,0.047) (0.073,0.153) (0.112,0.298) (0.082,0.470) (0.127,0.754) (0.212,1.174) (0.305,1.858)
+Parameters optimization took 8 rounds (45.069 sec)
+Computing ML distances based on estimated model parameters... 19.608 sec
+Computing BIONJ tree...
+0.024 seconds
+Log-likelihood of BIONJ tree: -38925.007
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 18.632 second
+Computing log-likelihood of 98 initial trees ... 62.753 seconds
+Current best score: -38815.934
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -38596.651
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -38564.345
+Iteration 10 / LogL: -38656.664 / Time: 0h:5m:49s
+Iteration 20 / LogL: -38645.360 / Time: 0h:6m:48s
+Finish initializing candidate tree set (20)
+Current best tree score: -38564.345 / CPU time: 320.195
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -38558.684
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -38545.281
+Iteration 30 / LogL: -38545.281 / Time: 0h:8m:1s (0h:27m:20s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -38535.946
+Iteration 40 / LogL: -38542.467 / Time: 0h:8m:56s (0h:21m:5s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 44: -38534.002
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 46: -38532.600
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 49: -38530.463
+Iteration 50 / LogL: -38576.451 / Time: 0h:10m:14s (0h:20m:30s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 52: -38529.254
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 58: -38523.361
+Iteration 60 / LogL: -38533.492 / Time: 0h:11m:57s (0h:19m:42s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 62: -38521.893
+Iteration 70 / LogL: -38523.643 / Time: 0h:13m:36s (0h:18m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 73: -38513.888
+Iteration 80 / LogL: -38521.550 / Time: 0h:15m:12s (0h:17m:47s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 85: -38513.285
+Iteration 90 / LogL: -38527.829 / Time: 0h:17m:2s (0h:18m:5s left)
+Iteration 100 / LogL: -38514.866 / Time: 0h:18m:40s (0h:15m:57s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.953
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -38517.315 / Time: 0h:20m:31s (0h:16m:51s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 112: -38513.103
+Iteration 120 / LogL: -38520.062 / Time: 0h:22m:25s (0h:17m:15s left)
+Iteration 130 / LogL: -38519.795 / Time: 0h:24m:0s (0h:15m:12s left)
+Iteration 140 / LogL: -38524.459 / Time: 0h:25m:36s (0h:13m:12s left)
+Iteration 150 / LogL: -38521.605 / Time: 0h:27m:15s (0h:11m:18s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 159: -38510.381
+Iteration 160 / LogL: -38547.131 / Time: 0h:29m:5s (0h:18m:3s left)
+Iteration 170 / LogL: -38537.608 / Time: 0h:30m:56s (0h:16m:14s left)
+Iteration 180 / LogL: -38521.277 / Time: 0h:32m:33s (0h:14m:19s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 181: -38507.359
+Iteration 190 / LogL: -38509.744 / Time: 0h:34m:21s (0h:16m:29s left)
+Iteration 200 / LogL: -38564.232 / Time: 0h:36m:6s (0h:14m:39s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 205: -38504.729
+Iteration 210 / LogL: -38520.698 / Time: 0h:37m:58s (0h:17m:12s left)
+Iteration 220 / LogL: -38505.302 / Time: 0h:39m:49s (0h:15m:25s left)
+Iteration 230 / LogL: -38540.367 / Time: 0h:41m:31s (0h:13m:34s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 238: -38504.384
+Iteration 240 / LogL: -38518.533 / Time: 0h:43m:34s (0h:17m:49s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 249: -38503.652
+Iteration 250 / LogL: -38529.820 / Time: 0h:45m:27s (0h:18m:1s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Iteration 260 / LogL: -38516.305 / Time: 0h:47m:25s (0h:16m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 264: -38499.227
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 269: -38498.550
+Iteration 270 / LogL: -38507.152 / Time: 0h:49m:17s (0h:18m:6s left)
+Iteration 280 / LogL: -38503.256 / Time: 0h:51m:4s (0h:16m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 288: -38497.997
+Iteration 290 / LogL: -38503.697 / Time: 0h:52m:55s (0h:17m:54s left)
+Iteration 300 / LogL: -38501.250 / Time: 0h:54m:38s (0h:16m:3s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.976
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 303: -38497.109
+Iteration 310 / LogL: -38508.953 / Time: 0h:56m:29s (0h:16m:58s left)
+Iteration 320 / LogL: -38531.035 / Time: 0h:58m:15s (0h:15m:8s left)
+Iteration 330 / LogL: -38513.121 / Time: 1h:0m:0s (0h:13m:17s left)
+UPDATE BEST LOG-LIKELIHOOD: -38497.108
+Iteration 340 / LogL: -38497.108 / Time: 1h:1m:55s (0h:11m:29s left)
+Iteration 350 / LogL: -38499.057 / Time: 1h:3m:47s (0h:9m:40s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 354: -38497.062
+Iteration 360 / LogL: -38504.824 / Time: 1h:5m:50s (0h:17m:13s left)
+Iteration 370 / LogL: -38501.383 / Time: 1h:7m:38s (0h:15m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 376: -38496.603
+Iteration 380 / LogL: -38512.202 / Time: 1h:9m:43s (0h:17m:38s left)
+Iteration 390 / LogL: -38497.112 / Time: 1h:11m:33s (0h:15m:47s left)
+Iteration 400 / LogL: -38503.499 / Time: 1h:13m:17s (0h:13m:56s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.970
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -38503.231 / Time: 1h:15m:16s (0h:16m:32s left)
+Iteration 420 / LogL: -38514.970 / Time: 1h:17m:15s (0h:14m:43s left)
+Iteration 430 / LogL: -38522.079 / Time: 1h:19m:17s (0h:12m:55s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 438: -38494.848
+Iteration 440 / LogL: -38519.890 / Time: 1h:21m:24s (0h:18m:9s left)
+Iteration 450 / LogL: -38499.385 / Time: 1h:23m:26s (0h:16m:20s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Iteration 460 / LogL: -38508.211 / Time: 1h:25m:21s (0h:14m:29s left)
+Iteration 470 / LogL: -38504.755 / Time: 1h:27m:25s (0h:12m:39s left)
+Iteration 480 / LogL: -38516.682 / Time: 1h:29m:28s (0h:10m:49s left)
+Iteration 490 / LogL: -38513.279 / Time: 1h:31m:17s (0h:8m:57s left)
+Iteration 500 / LogL: -38519.259 / Time: 1h:33m:14s (0h:7m:5s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.974
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -38500.205 / Time: 1h:35m:8s (0h:16m:48s left)
+Iteration 520 / LogL: -38501.220 / Time: 1h:37m:8s (0h:14m:57s left)
+Iteration 530 / LogL: -38505.743 / Time: 1h:39m:6s (0h:13m:6s left)
+Iteration 540 / LogL: -38511.929 / Time: 1h:40m:58s (0h:11m:13s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 544: -38494.610
+Iteration 550 / LogL: -38500.508 / Time: 1h:43m:5s (0h:17m:38s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 559: -38494.568
+Iteration 560 / LogL: -38501.701 / Time: 1h:45m:12s (0h:18m:36s left)
+Iteration 570 / LogL: -38500.419 / Time: 1h:47m:12s (0h:16m:45s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 577: -38492.553
+Iteration 580 / LogL: -38500.218 / Time: 1h:49m:29s (0h:18m:19s left)
+Iteration 590 / LogL: -38504.477 / Time: 1h:51m:29s (0h:16m:27s left)
+Iteration 600 / LogL: -38495.544 / Time: 1h:53m:33s (0h:14m:35s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.985
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -38525.405 / Time: 1h:55m:33s (0h:17m:3s left)
+Iteration 620 / LogL: -38494.506 / Time: 1h:57m:43s (0h:15m:12s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 621: -38491.477
+Iteration 630 / LogL: -38492.341 / Time: 1h:59m:56s (0h:17m:20s left)
+Iteration 640 / LogL: -38492.350 / Time: 2h:1m:56s (0h:15m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 643: -38488.599
+Iteration 650 / LogL: -38502.997 / Time: 2h:4m:8s (0h:17m:46s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Iteration 660 / LogL: -38504.838 / Time: 2h:6m:35s (0h:15m:55s left)
+Iteration 670 / LogL: -38509.153 / Time: 2h:8m:49s (0h:14m:2s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 672: -38488.383
+Iteration 680 / LogL: -38490.807 / Time: 2h:11m:12s (0h:17m:45s left)
+Iteration 690 / LogL: -38505.022 / Time: 2h:13m:24s (0h:15m:51s left)
+Iteration 700 / LogL: -38498.954 / Time: 2h:15m:47s (0h:13m:58s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.978
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 710 / LogL: -38499.559 / Time: 2h:17m:52s (0h:17m:29s left)
+Iteration 720 / LogL: -38496.961 / Time: 2h:20m:10s (0h:15m:35s left)
+Iteration 730 / LogL: -38488.391 / Time: 2h:22m:19s (0h:13m:39s left)
+Iteration 740 / LogL: -38496.901 / Time: 2h:24m:18s (0h:11m:42s left)
+Iteration 750 / LogL: -38489.318 / Time: 2h:26m:31s (0h:9m:46s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 758: -38488.353
+Iteration 760 / LogL: -38495.974 / Time: 2h:28m:46s (0h:19m:11s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 764: -38488.324
+Iteration 770 / LogL: -38489.202 / Time: 2h:31m:0s (0h:18m:26s left)
+Iteration 780 / LogL: -38498.058 / Time: 2h:33m:15s (0h:16m:30s left)
+Iteration 790 / LogL: -38506.136 / Time: 2h:35m:16s (0h:14m:33s left)
+Iteration 800 / LogL: -38516.545 / Time: 2h:37m:22s (0h:12m:35s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.978
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+BETTER TREE FOUND at iteration 806: -38488.321
+Iteration 810 / LogL: -38495.848 / Time: 2h:39m:30s (0h:18m:55s left)
+Iteration 820 / LogL: -38495.059 / Time: 2h:41m:43s (0h:16m:58s left)
+Iteration 830 / LogL: -38510.573 / Time: 2h:44m:7s (0h:15m:2s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 833: -38488.283
+Iteration 840 / LogL: -38502.436 / Time: 2h:46m:19s (0h:18m:25s left)
+Iteration 850 / LogL: -38495.111 / Time: 2h:48m:23s (0h:16m:27s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Iteration 860 / LogL: -38496.018 / Time: 2h:50m:32s (0h:14m:29s left)
+Iteration 870 / LogL: -38488.352 / Time: 2h:52m:43s (0h:12m:30s left)
+Iteration 880 / LogL: -38489.363 / Time: 2h:54m:57s (0h:10m:32s left)
+BETTER TREE FOUND at iteration 886: -38488.280
+Iteration 890 / LogL: -38500.670 / Time: 2h:57m:7s (0h:19m:7s left)
+Iteration 900 / LogL: -38503.645 / Time: 2h:59m:15s (0h:17m:8s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.978
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 910 / LogL: -38507.955 / Time: 3h:1m:23s (0h:17m:57s left)
+Iteration 920 / LogL: -38497.562 / Time: 3h:3m:27s (0h:15m:57s left)
+Iteration 930 / LogL: -38491.004 / Time: 3h:5m:46s (0h:13m:59s left)
+Iteration 940 / LogL: -38494.264 / Time: 3h:7m:43s (0h:11m:59s left)
+Iteration 950 / LogL: -38515.074 / Time: 3h:10m:4s (0h:10m:0s left)
+Log-likelihood cutoff on original alignment: -38676.685
+Iteration 960 / LogL: -38531.434 / Time: 3h:12m:21s (0h:8m:1s left)
+Iteration 970 / LogL: -38499.005 / Time: 3h:14m:28s (0h:6m:1s left)
+Iteration 980 / LogL: -38495.757 / Time: 3h:16m:29s (0h:4m:0s left)
+Iteration 990 / LogL: -38526.893 / Time: 3h:18m:25s (0h:2m:0s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 995: -38476.655
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1000: -38470.639
+Iteration 1000 / LogL: -38470.639 / Time: 3h:20m:36s (0h:20m:4s left)
+Log-likelihood cutoff on original alignment: -38676.685
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.972
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1004: -38463.579
+Iteration 1010 / LogL: -38468.796 / Time: 3h:22m:48s (0h:18m:53s left)
+Iteration 1020 / LogL: -38463.941 / Time: 3h:24m:45s (0h:16m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1026: -38462.041
+Iteration 1030 / LogL: -38483.917 / Time: 3h:27m:3s (0h:19m:18s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1037: -38460.083
+Iteration 1040 / LogL: -38462.820 / Time: 3h:29m:34s (0h:19m:33s left)
+Iteration 1050 / LogL: -38473.643 / Time: 3h:32m:4s (0h:17m:34s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1060 / LogL: -38491.536 / Time: 3h:34m:22s (0h:15m:34s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1065: -38459.723
+Iteration 1070 / LogL: -38484.399 / Time: 3h:36m:51s (0h:19m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1073: -38459.450
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1076: -38459.321
+Iteration 1080 / LogL: -38467.016 / Time: 3h:39m:18s (0h:19m:30s left)
+Iteration 1090 / LogL: -38466.115 / Time: 3h:41m:30s (0h:17m:29s left)
+Iteration 1100 / LogL: -38465.579 / Time: 3h:43m:54s (0h:15m:28s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.910
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1110 / LogL: -38462.805 / Time: 3h:46m:18s (0h:18m:21s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1113: -38457.720
+Iteration 1120 / LogL: -38510.093 / Time: 3h:48m:53s (0h:19m:0s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -38457.629
+Iteration 1130 / LogL: -38467.867 / Time: 3h:51m:16s (0h:16m:59s left)
+Iteration 1140 / LogL: -38467.986 / Time: 3h:53m:45s (0h:14m:58s left)
+Iteration 1150 / LogL: -38458.939 / Time: 3h:56m:10s (0h:12m:56s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1160 / LogL: -38457.933 / Time: 3h:58m:31s (0h:10m:54s left)
+Iteration 1170 / LogL: -38468.610 / Time: 4h:0m:59s (0h:8m:51s left)
+BETTER TREE FOUND at iteration 1175: -38457.620
+Iteration 1180 / LogL: -38474.070 / Time: 4h:3m:15s (0h:19m:35s left)
+UPDATE BEST LOG-LIKELIHOOD: -38457.614
+Iteration 1190 / LogL: -38468.866 / Time: 4h:5m:41s (0h:17m:33s left)
+Iteration 1200 / LogL: -38467.370 / Time: 4h:8m:6s (0h:15m:30s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.903
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1210 / LogL: -38486.320 / Time: 4h:10m:33s (0h:18m:38s left)
+Iteration 1220 / LogL: -38461.916 / Time: 4h:12m:45s (0h:16m:34s left)
+BETTER TREE FOUND at iteration 1230: -38457.614
+Iteration 1230 / LogL: -38457.614 / Time: 4h:15m:13s (0h:20m:45s left)
+Iteration 1240 / LogL: -38465.903 / Time: 4h:17m:39s (0h:18m:42s left)
+Iteration 1250 / LogL: -38460.098 / Time: 4h:19m:54s (0h:16m:38s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1260 / LogL: -38461.900 / Time: 4h:22m:16s (0h:14m:34s left)
+Iteration 1270 / LogL: -38485.919 / Time: 4h:24m:25s (0h:12m:29s left)
+Iteration 1280 / LogL: -38462.106 / Time: 4h:26m:44s (0h:10m:25s left)
+Iteration 1290 / LogL: -38471.472 / Time: 4h:28m:57s (0h:8m:20s left)
+Iteration 1300 / LogL: -38472.629 / Time: 4h:31m:5s (0h:6m:15s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.909
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1310 / LogL: -38459.324 / Time: 4h:33m:16s (0h:18m:46s left)
+Iteration 1320 / LogL: -38482.547 / Time: 4h:35m:34s (0h:16m:42s left)
+Iteration 1330 / LogL: -38466.226 / Time: 4h:37m:48s (0h:14m:37s left)
+Iteration 1340 / LogL: -38473.847 / Time: 4h:39m:55s (0h:12m:32s left)
+Iteration 1350 / LogL: -38465.890 / Time: 4h:42m:10s (0h:10m:27s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1360 / LogL: -38462.388 / Time: 4h:44m:11s (0h:8m:21s left)
+Iteration 1370 / LogL: -38526.256 / Time: 4h:46m:14s (0h:6m:16s left)
+Iteration 1380 / LogL: -38459.925 / Time: 4h:48m:26s (0h:4m:10s left)
+Iteration 1390 / LogL: -38473.707 / Time: 4h:50m:23s (0h:2m:5s left)
+Iteration 1400 / LogL: -38459.281 / Time: 4h:52m:12s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.914
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1410 / LogL: -38457.953 / Time: 4h:54m:8s (0h:18m:46s left)
+Iteration 1420 / LogL: -38481.594 / Time: 4h:56m:7s (0h:16m:41s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1429: -38457.519
+Iteration 1430 / LogL: -38462.297 / Time: 4h:58m:6s (0h:20m:38s left)
+Iteration 1440 / LogL: -38463.325 / Time: 5h:0m:0s (0h:18m:32s left)
+Iteration 1450 / LogL: -38457.535 / Time: 5h:1m:53s (0h:16m:27s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1460 / LogL: -38478.050 / Time: 5h:3m:53s (0h:14m:22s left)
+Iteration 1470 / LogL: -38469.944 / Time: 5h:5m:45s (0h:12m:16s left)
+Iteration 1480 / LogL: -38470.998 / Time: 5h:7m:32s (0h:10m:11s left)
+Iteration 1490 / LogL: -38466.793 / Time: 5h:9m:19s (0h:8m:5s left)
+Iteration 1500 / LogL: -38480.308 / Time: 5h:11m:3s (0h:6m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.913
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1510 / LogL: -38475.997 / Time: 5h:12m:47s (0h:18m:38s left)
+Iteration 1520 / LogL: -38461.192 / Time: 5h:14m:28s (0h:16m:33s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -38457.448
+Iteration 1530 / LogL: -38469.225 / Time: 5h:16m:13s (0h:14m:28s left)
+Iteration 1540 / LogL: -38465.903 / Time: 5h:17m:52s (0h:12m:23s left)
+Iteration 1550 / LogL: -38460.388 / Time: 5h:19m:36s (0h:10m:18s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1560 / LogL: -38459.961 / Time: 5h:21m:28s (0h:8m:14s left)
+Iteration 1570 / LogL: -38472.600 / Time: 5h:23m:15s (0h:6m:10s left)
+Iteration 1580 / LogL: -38468.520 / Time: 5h:24m:58s (0h:4m:6s left)
+Iteration 1590 / LogL: -38466.725 / Time: 5h:26m:45s (0h:2m:3s left)
+Iteration 1600 / LogL: -38467.979 / Time: 5h:28m:31s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.916
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1610 / LogL: -38478.268 / Time: 5h:30m:16s (0h:18m:28s left)
+UPDATE BEST LOG-LIKELIHOOD: -38457.438
+Iteration 1620 / LogL: -38469.951 / Time: 5h:32m:4s (0h:16m:24s left)
+Iteration 1630 / LogL: -38483.882 / Time: 5h:33m:55s (0h:14m:20s left)
+Iteration 1640 / LogL: -38505.229 / Time: 5h:35m:48s (0h:12m:17s left)
+Iteration 1650 / LogL: -38466.917 / Time: 5h:37m:44s (0h:10m:14s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1660 / LogL: -38487.932 / Time: 5h:39m:33s (0h:8m:11s left)
+UPDATE BEST LOG-LIKELIHOOD: -38457.438
+Iteration 1670 / LogL: -38490.110 / Time: 5h:41m:27s (0h:6m:8s left)
+Iteration 1680 / LogL: -38484.443 / Time: 5h:43m:18s (0h:4m:5s left)
+Iteration 1690 / LogL: -38465.430 / Time: 5h:45m:12s (0h:2m:2s left)
+Iteration 1700 / LogL: -38475.685 / Time: 5h:47m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.914
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1710 / LogL: -38469.238 / Time: 5h:49m:2s (0h:18m:22s left)
+Iteration 1720 / LogL: -38469.345 / Time: 5h:50m:49s (0h:16m:19s left)
+Iteration 1730 / LogL: -38474.848 / Time: 5h:52m:36s (0h:14m:16s left)
+Iteration 1740 / LogL: -38465.982 / Time: 5h:54m:26s (0h:12m:13s left)
+Iteration 1750 / LogL: -38485.647 / Time: 5h:56m:11s (0h:10m:10s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1760 / LogL: -38459.248 / Time: 5h:57m:56s (0h:8m:8s left)
+Iteration 1770 / LogL: -38478.989 / Time: 5h:59m:36s (0h:6m:5s left)
+Iteration 1780 / LogL: -38465.973 / Time: 6h:1m:20s (0h:4m:3s left)
+Iteration 1790 / LogL: -38466.270 / Time: 6h:3m:7s (0h:2m:1s left)
+Iteration 1800 / LogL: -38480.747 / Time: 6h:4m:59s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.914
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1810 / LogL: -38473.648 / Time: 6h:6m:44s (0h:18m:14s left)
+Iteration 1820 / LogL: -38469.443 / Time: 6h:8m:21s (0h:16m:11s left)
+Iteration 1830 / LogL: -38470.942 / Time: 6h:10m:7s (0h:14m:9s left)
+Iteration 1840 / LogL: -38463.187 / Time: 6h:11m:49s (0h:12m:7s left)
+Iteration 1850 / LogL: -38457.438 / Time: 6h:13m:33s (0h:10m:5s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1860 / LogL: -38459.712 / Time: 6h:15m:18s (0h:8m:4s left)
+Iteration 1870 / LogL: -38468.877 / Time: 6h:17m:2s (0h:6m:3s left)
+Iteration 1880 / LogL: -38474.242 / Time: 6h:18m:44s (0h:4m:1s left)
+Iteration 1890 / LogL: -38463.405 / Time: 6h:20m:28s (0h:2m:0s left)
+Iteration 1900 / LogL: -38469.034 / Time: 6h:22m:14s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.913
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 1910 / LogL: -38476.970 / Time: 6h:23m:53s (0h:18m:5s left)
+Iteration 1920 / LogL: -38493.242 / Time: 6h:25m:39s (0h:16m:4s left)
+Iteration 1930 / LogL: -38469.476 / Time: 6h:27m:20s (0h:14m:3s left)
+Iteration 1940 / LogL: -38458.319 / Time: 6h:29m:3s (0h:12m:2s left)
+Iteration 1950 / LogL: -38473.022 / Time: 6h:30m:51s (0h:10m:1s left)
+Log-likelihood cutoff on original alignment: -38675.735
+Iteration 1960 / LogL: -38469.594 / Time: 6h:32m:35s (0h:8m:0s left)
+Iteration 1970 / LogL: -38462.881 / Time: 6h:34m:23s (0h:6m:0s left)
+Iteration 1980 / LogL: -38459.356 / Time: 6h:36m:2s (0h:4m:0s left)
+Iteration 1990 / LogL: -38458.403 / Time: 6h:37m:46s (0h:1m:59s left)
+Iteration 2000 / LogL: -38479.785 / Time: 6h:39m:33s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -38675.735
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.933
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+WARNING: bootstrap analysis did not converge. You should rerun with higher number of iterations (-nm option)
+TREE SEARCH COMPLETED AFTER 2001 ITERATIONS / Time: 6h:39m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -38457.438
+2. Current log-likelihood: -38457.400
+3. Current log-likelihood: -38457.355
+4. Current log-likelihood: -38457.311
+5. Current log-likelihood: -38457.266
+6. Current log-likelihood: -38457.224
+7. Current log-likelihood: -38457.182
+8. Current log-likelihood: -38457.142
+9. Current log-likelihood: -38457.105
+10. Current log-likelihood: -38457.067
+11. Current log-likelihood: -38457.031
+12. Current log-likelihood: -38456.993
+13. Current log-likelihood: -38456.959
+14. Current log-likelihood: -38456.925
+15. Current log-likelihood: -38456.890
+16. Current log-likelihood: -38456.854
+17. Current log-likelihood: -38456.822
+18. Current log-likelihood: -38456.790
+19. Current log-likelihood: -38456.756
+20. Current log-likelihood: -38456.724
+21. Current log-likelihood: -38456.692
+22. Current log-likelihood: -38456.662
+23. Current log-likelihood: -38456.631
+24. Current log-likelihood: -38456.600
+25. Current log-likelihood: -38456.568
+26. Current log-likelihood: -38456.537
+27. Current log-likelihood: -38456.507
+28. Current log-likelihood: -38456.476
+29. Current log-likelihood: -38456.445
+30. Current log-likelihood: -38456.413
+31. Current log-likelihood: -38456.377
+32. Current log-likelihood: -38456.342
+33. Current log-likelihood: -38456.305
+34. Current log-likelihood: -38456.265
+35. Current log-likelihood: -38456.220
+36. Current log-likelihood: -38456.173
+37. Current log-likelihood: -38456.118
+38. Current log-likelihood: -38456.056
+39. Current log-likelihood: -38455.992
+40. Current log-likelihood: -38455.906
+41. Current log-likelihood: -38455.813
+42. Current log-likelihood: -38455.706
+43. Current log-likelihood: -38455.588
+44. Current log-likelihood: -38455.463
+45. Current log-likelihood: -38455.344
+46. Current log-likelihood: -38455.234
+47. Current log-likelihood: -38455.122
+48. Current log-likelihood: -38455.038
+49. Current log-likelihood: -38454.948
+50. Current log-likelihood: -38454.900
+51. Current log-likelihood: -38454.817
+52. Current log-likelihood: -38454.778
+53. Current log-likelihood: -38454.716
+54. Current log-likelihood: -38454.699
+55. Current log-likelihood: -38454.668
+56. Current log-likelihood: -38454.638
+57. Current log-likelihood: -38454.611
+58. Current log-likelihood: -38454.585
+59. Current log-likelihood: -38454.560
+Optimal log-likelihood: -38454.544
+Site proportion and rates:  (0.058,0.021) (0.090,0.112) (0.068,0.243) (0.128,0.388) (0.133,0.725) (0.245,1.181) (0.277,1.938)
+Parameters optimization took 59 rounds (213.929 sec)
+BEST SCORE FOUND : -38454.544
+Creating bootstrap support values...
+Split supports printed to NEXUS file K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+Total tree length: 115.709
+
+Total number of iterations: 2001
+CPU time used for tree search: 67115.555 sec (18h:38m:35s)
+Wall-clock time used for tree search: 23898.393 sec (6h:38m:18s)
+Total CPU time used: 67984.494 sec (18h:53m:4s)
+Total wall-clock time used: 24202.114 sec (6h:43m:22s)
+
+Computing bootstrap consensus tree...
+Reading input file K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex...
+173 taxa and 2289 splits.
+Consensus tree written to K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Reading input trees file K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Log-likelihood of consensus tree: -38454.725
+
+Analysis results written to: 
+  IQ-TREE report:                K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.iqtree
+  Maximum-likelihood tree:       K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.treefile
+  Likelihood distances:          K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+  Consensus tree:                K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+  Screen log file:               K00940.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.log
+
+Date and Time: Wed Oct 13 02:32:13 2021

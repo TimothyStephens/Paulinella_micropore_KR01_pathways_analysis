@@ -1,0 +1,18 @@
+public static Colour? Format(object attribute)
+{
+    if (attribute is double attributeValue && !double.IsNaN(attributeValue))
+    {
+        if (attributeValue >= 100)
+        {
+            return Colours.Green;
+        }
+        else
+        {
+            return Colours.LightGreen;
+        }
+    }
+    else
+    {
+        return null;
+    }
+}

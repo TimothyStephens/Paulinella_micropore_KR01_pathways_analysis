@@ -1,0 +1,139 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: /home/timothy/programs/iqtree-1.6.12-Linux/bin/iqtree -s K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln -nt AUTO -ntmax 6 -m LG+R7 -bb 2000 -nm 2000 -quiet
+Seed:    774345 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 12 19:48:46 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 23 sequences with 741 columns, 453 distinct patterns
+257 parsimony-informative, 125 singleton sites, 359 constant sites
+                                                                                                  Gap/Ambiguity  Composition  p-value
+   1  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Alexandrium_monilatum_MMETSP0093_c25182_g1_i1.p2       61.54%    passed     36.80%
+   2  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Alexandrium_monilatum_MMETSP0097_c91630_g1_i1.p2       64.51%    passed     52.55%
+   3  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Azadinium_spinosum_MMETSP1038_c20283_g1_i1.p1          68.15%    passed     22.87%
+   4  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Ceratium_fusus_MMETSP1074_c33581_g1_i1.p1              74.90%    passed     85.77%
+   5  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Ceratium_fusus_MMETSP1075_c109501_g1_i1.p1             67.21%    passed     84.65%
+   6  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Protoceratium_reticulatum_MMETSP0228_c91606_g1_i1.p1   58.70%    passed     91.69%
+   7  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Pyrodinium_bahamense_MMETSP0796_c34888_g1_i1.p1        10.39%    failed      0.00%
+   8  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Pyrodinium_bahamense_MMETSP0796_c43703_g1_i1.p2        73.14%    passed     43.49%
+   9  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Symbiodinium_sp_MMETSP1115_c23531_g1_i1.p1             66.26%    passed     92.50%
+  10  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Symbiodinium_sp_MMETSP1116_c11416_g1_i1.p1             67.21%    passed     94.48%
+  11  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Trichosphaerium_sp_MMETSP0405_c19820_g1_i1.p1               69.10%    passed     12.72%
+  12  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Chlorarachnion_reptans_MMETSP0109_c13394_g1_i1.p1    61.54%    passed     73.39%
+  13  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Lotharella_globosa_MMETSP0111_c10371_g1_i1.p1        59.11%    passed     90.92%
+  14  Eukaryota-Cercozoa-Chlorarachniophyceae-NA-NA-Lotharella_globosa_MMETSP0111_c26876_g1_i1.p1        63.02%    passed     96.63%
+  15  Eukaryota-Cnidaria-Hydrozoa-Anthoathecata-Hydridae-Hydra_magnipapillata_jgiHma2207101              69.77%    passed      8.78%
+  16  Eukaryota-Cryptophyta-NA-Goniomondales-NA-Goniomonas_pacifica_MMETSP0107_c6908_g1_i1.p1            68.69%    failed      1.14%
+  17  Eukaryota-Haptophyta-NA-Isochrysidales-Noelaerhabdaceae-Emiliania_huxleyi_jgi199574                74.22%    passed     46.18%
+  18  Eukaryota-Retaria-NA-NA-NA-Rosalina_sp_MMETSP0190_c745_g1_i1.p1                                    69.77%    failed      0.00%
+  19  Eukaryota-Stramenopiles-NA-NA-NA-Corethron_pennatum_MMETSP0171_c8057_g1_i1.p2                      65.18%    passed      8.01%
+  20  Eukaryota-Stramenopiles-NA-NA-NA-Odontella_sinensis_MMETSP0160_c32423_g1_i1.p1                     68.69%    passed     82.89%
+  21  Eukaryota-Stramenopiles-NA-NA-NA-Spumella_elongata_MMETSP1098_c51080_g1_i1.p1                      68.56%    passed     94.53%
+  22  MSTRG.12686.1.p1                                                                                   63.97%    passed     31.98%
+  23  Paulinella_ovalis_nuclear_SingleCell___SAG5_contig00163.g342.t1                                    78.95%    passed     47.30%
+WARNING: 22 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                                              64.89%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 774345)...
+
+NOTE: 15 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 6 CPU cores
+Increase to 10 rounds for branch lengths
+4 trees examined
+Threads: 1 / Time: 6.747 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -13397
+Threads: 2 / Time: 4.500 sec / Speedup: 1.499 / Efficiency: 75% / LogL: -13397
+Threads: 3 / Time: 2.445 sec / Speedup: 2.759 / Efficiency: 92% / LogL: -13397
+Threads: 4 / Time: 1.670 sec / Speedup: 4.040 / Efficiency: 101% / LogL: -13397
+Threads: 5 / Time: 1.259 sec / Speedup: 5.361 / Efficiency: 107% / LogL: -13397
+Threads: 6 / Time: 1.578 sec / Speedup: 4.275 / Efficiency: 71% / LogL: -13397
+BEST NUMBER OF THREADS: 5
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -12493.150
+2. Current log-likelihood: -11921.617
+3. Current log-likelihood: -11917.344
+Optimal log-likelihood: -11917.335
+Site proportion and rates:  (0.055,0.184) (0.092,0.334) (0.126,0.496) (0.156,0.672) (0.184,1.007) (0.204,1.325) (0.183,1.837)
+Parameters optimization took 3 rounds (2.607 sec)
+Computing ML distances based on estimated model parameters... 0.418 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -11915.040
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.531 second
+Computing log-likelihood of 98 initial trees ... 9.862 seconds
+Current best score: -11912.439
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -11895.337
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -11894.948
+Iteration 10 / LogL: -11895.129 / Time: 0h:0m:39s
+Iteration 20 / LogL: -11898.619 / Time: 0h:0m:42s
+Finish initializing candidate tree set (5)
+Current best tree score: -11894.948 / CPU time: 20.610
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -11898.641 / Time: 0h:0m:46s (0h:1m:53s left)
+Iteration 40 / LogL: -11898.834 / Time: 0h:0m:49s (0h:1m:18s left)
+Iteration 50 / LogL: -11898.636 / Time: 0h:0m:54s (0h:0m:56s left)
+Log-likelihood cutoff on original alignment: -11930.143
+Iteration 60 / LogL: -11895.011 / Time: 0h:0m:57s (0h:0m:40s left)
+Iteration 70 / LogL: -11898.571 / Time: 0h:1m:2s (0h:0m:28s left)
+Iteration 80 / LogL: -11898.644 / Time: 0h:1m:5s (0h:0m:18s left)
+Iteration 90 / LogL: -11895.014 / Time: 0h:1m:9s (0h:0m:9s left)
+Iteration 100 / LogL: -11894.979 / Time: 0h:1m:12s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -11928.429
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:1m:13s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -11894.948
+2. Current log-likelihood: -11894.935
+Optimal log-likelihood: -11894.928
+Site proportion and rates:  (0.061,0.185) (0.087,0.346) (0.126,0.547) (0.161,0.674) (0.181,0.920) (0.190,1.309) (0.193,1.891)
+Parameters optimization took 2 rounds (0.521 sec)
+BEST SCORE FOUND : -11894.928
+Creating bootstrap support values...
+Split supports printed to NEXUS file K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+Total tree length: 22.098
+
+Total number of iterations: 103
+CPU time used for tree search: 229.559 sec (0h:3m:49s)
+Wall-clock time used for tree search: 51.659 sec (0h:0m:51s)
+Total CPU time used: 277.470 sec (0h:4m:37s)
+Total wall-clock time used: 74.022 sec (0h:1m:14s)
+
+Computing bootstrap consensus tree...
+Reading input file K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex...
+23 taxa and 176 splits.
+Consensus tree written to K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Reading input trees file K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Log-likelihood of consensus tree: -11894.928
+
+Analysis results written to: 
+  IQ-TREE report:                K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.iqtree
+  Maximum-likelihood tree:       K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.treefile
+  Likelihood distances:          K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+  Consensus tree:                K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+  Screen log file:               K00860.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.log
+
+Date and Time: Tue Oct 12 19:50:00 2021

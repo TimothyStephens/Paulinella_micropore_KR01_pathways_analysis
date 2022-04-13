@@ -1,0 +1,399 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    coral (AVX512, FMA3, 376 GB RAM)
+Command: /home/timothy/programs/iqtree-1.6.12-Linux/bin/iqtree -s K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln -nt AUTO -ntmax 6 -m LG+R7 -bb 2000 -nm 2000 -quiet
+Seed:    750729 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Oct 12 23:00:53 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 146 sequences with 2010 columns, 1484 distinct patterns
+739 parsimony-informative, 452 singleton sites, 819 constant sites
+                                                                                                                                  Gap/Ambiguity  Composition  p-value
+   1  Bacteria-Cyanobacteria-NA-Oscillatoriales-Coleofasciculaceae-Geitlerinema_sp._PCC_9228_WP_071516869.1                              83.53%    passed     15.91%
+   2  Bacteria-Proteobacteria-Gammaproteobacteria-Alteromonadales-Alteromonadaceae-Alishewanella_sp._WH161_WP_057786597.1                84.13%    passed     39.52%
+   3  Bacteria-Proteobacteria-Gammaproteobacteria-Alteromonadales-Alteromonadaceae-Marinobacter_gudaonensis_WP_091991403.1               84.08%    failed      1.61%
+   4  Bacteria-Proteobacteria-Gammaproteobacteria-Alteromonadales-Alteromonadaceae-Marinobacter_pelagius_WP_113861099.1                  84.08%    passed      8.12%
+   5  Bacteria-Proteobacteria-Gammaproteobacteria-Alteromonadales-Idiomarinaceae-Idiomarina_aquatica_WP_133539952.1                      84.33%    failed      2.88%
+   6  Bacteria-Proteobacteria-Gammaproteobacteria-Alteromonadales-Idiomarinaceae-Idiomarina_fontislapidosi_WP_110575952.1                84.03%    failed      0.42%
+   7  Bacteria-Proteobacteria-Gammaproteobacteria-NA-NA-Gammaproteobacteria_bacterium_soil367_WP_136549627.1                             84.08%    failed      0.73%
+   8  Bacteria-Proteobacteria-Gammaproteobacteria-Pseudomonadales-Pseudomonadaceae-Pseudomonadaceae_bacterium_SI3_WP_127839486.1         84.08%    failed      3.59%
+   9  Bacteria-Proteobacteria-Gammaproteobacteria-Pseudomonadales-Pseudomonadaceae-Pseudomonas_stutzeri_WP_019339528.1                   84.08%    failed      2.23%
+  10  Bacteria-Proteobacteria-Gammaproteobacteria-Pseudomonadales-Pseudomonadaceae-Pseudomonas_stutzeri_WP_045161713.1                   84.08%    failed      2.61%
+  11  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Dinophysis_acuminata_MMETSP0797_c39824_g1_i1.p2                                        82.29%    failed      0.00%
+  12  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Glenodinium_foliaceum_MMETSP0118_c31495_g1_i1.p1                                       79.55%    failed      0.00%
+  13  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Peridinium_aciculiferum_MMETSP0371_c76698_g1_i1.p1                                     80.25%    failed      0.00%
+  14  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Polarella_glacialis_MMETSP0227_c71985_g1_i1.p1                                         84.43%    passed     56.83%
+  15  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Scrippsiella_hangoei-like_MMETSP0367_c75116_g1_i1.p2                                   80.25%    failed      0.00%
+  16  Eukaryota-Alveolata-Dinophyceae-NA-Unranked-Symbiodinium_sp_MMETSP1122_c39056_g1_i1.p1                                             83.08%    failed      0.94%
+  17  Eukaryota-Alveolata-Dinophyceae-Peridiniales-Kryptoperidiniaceae-Kryptoperidinium_foliaceum_MMETSP0120_c7806_g1_i1.p1              82.49%    failed      0.71%
+  18  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Filamoeba_nolandi_MMETSP0413_c1469_g1_i1.p1                                                 81.94%    passed     72.62%
+  19  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Mayorella_sp_MMETSP0417_c13781_g1_i1.p1                                                     77.41%    failed      3.70%
+  20  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Pessonella_sp_MMETSP0420_c11559_g1_i1.p1                                                    82.84%    passed     94.96%
+  21  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Pessonella_sp_MMETSP0420_c1423_g1_i1.p1                                                     83.08%    passed      9.40%
+  22  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Stygamoeba_regulata_MMETSP0447_c7894_g1_i1.p1                                               77.41%    failed      3.70%
+  23  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Trichosphaerium_sp_MMETSP0405_c23024_g1_i1.p1                                               82.14%    passed     41.44%
+  24  Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Vexillifera_sp_MMETSP0173_c12421_g1_i1.p1                                                   80.00%    passed     20.17%
+  25  Eukaryota-Annelida-Clitellata-Hirudinida-Glossiphoniidae-Helobdella_robusta_jgi69675                                               82.49%    passed     68.63%
+  26  Eukaryota-Annelida-Clitellata-Hirudinida-Glossiphoniidae-Helobdella_robusta_jgi77501                                               83.13%    failed      0.01%
+  27  Eukaryota-Apicomplexa-Conoidasida-Eucoccidiorida-Cryptosporidiidae-Cryptosporidium_muris_XP_002140694.1                            82.64%    failed      0.24%
+  28  Eukaryota-Apicomplexa-Conoidasida-Eucoccidiorida-Sarcocystidae-Besnoitia_besnoiti_XP_029218089.1                                   70.80%    failed      0.00%
+  29  Eukaryota-Apicomplexa-Conoidasida-Eucoccidiorida-Sarcocystidae-Toxoplasma_gondii_XP_002364327.2                                    70.10%    failed      0.01%
+  30  Eukaryota-Apicomplexa-Conoidasida-Eugregarinorida-Gregarinidae-Gregarina_niphandrodes_XP_011129432.1                               78.11%    passed     46.46%
+  31  Eukaryota-Apicomplexa-NA-Unranked-NA-Alveolata_sp_MMETSP0288_c3869_g1_i1.p1                                                        73.78%    passed      5.46%
+  32  Eukaryota-Apicomplexa-NA-Unranked-NA-Lankesteria_abbottii_MMETSP0372_c4762_g1_i1.p1                                                89.20%    passed     92.70%
+  33  Eukaryota-Apusomonadidae-NA-NA-NA-Thecamonas_trahens_XP_013762772.1                                                                79.40%    failed      0.07%
+  34  Eukaryota-Arthropoda-Arachnida-Mesostigmata-Phytoseiidae-Galendromus_occidentalis_XP_003741943.1                                   80.05%    passed     94.26%
+  35  Eukaryota-Arthropoda-Insecta-Coleoptera-Scarabaeidae-Onthophagus_taurus_XP_022916990.1                                             80.75%    passed     22.90%
+  36  Eukaryota-Arthropoda-Insecta-Hemiptera-Aleyrodidae-Bemisia_tabaci_XP_018908156.1                                                   81.39%    passed     13.17%
+  37  Eukaryota-Arthropoda-Insecta-Hymenoptera-Apidae-Apis_florea_XP_003698129.1                                                         80.15%    passed     21.72%
+  38  Eukaryota-Arthropoda-Insecta-Hymenoptera-Apidae-Bombus_terrestris_XP_012168903.1                                                   80.15%    passed     38.25%
+  39  Eukaryota-Arthropoda-Insecta-Hymenoptera-Apidae-Habropoda_laboriosa_XP_017787445.1                                                 80.15%    passed     26.37%
+  40  Eukaryota-Arthropoda-Insecta-Thysanoptera-Thripidae-Frankliniella_occidentalis_XP_026282381.1                                      79.45%    passed     29.76%
+  41  Eukaryota-Arthropoda-Malacostraca-Amphipoda-Hyalellidae-Hyalella_azteca_XP_018006693.1                                             78.86%    passed      6.75%
+  42  Eukaryota-Arthropoda-Merostomata-Xiphosura-Limulidae-Limulus_polyphemus_XP_013774974.1                                             79.60%    passed     25.57%
+  43  Eukaryota-Brachiopoda-Lingulata-Lingulida-Lingulidae-Lingula_anatina_XP_013381847.1                                                80.35%    passed     36.84%
+  44  Eukaryota-Chlorophyta-Chlorophyceae-Chlamydomonadales-Chlamydomonadaceae-Chlamydomonas_chlamydogama_MMETSP1392_c4993_g1_i1.p1      80.30%    failed      0.05%
+  45  Eukaryota-Chlorophyta-Chlorophyceae-Chlamydomonadales-Dunaliellaceae-Dunaliella_tertiolecta_MMETSP1126_c21028_g1_i1.p1             79.70%    passed      6.85%
+  46  Eukaryota-Chlorophyta-NA-NA-NA-Prasinococcus_capsulatus_MMETSP0941_c8252_g1_i1.p1                                                  70.90%    failed      0.00%
+  47  Eukaryota-Chlorophyta-NA-Pyramimonadales-NA-Pyramimonas_sp_MMETSP1445_c1507_g1_i1.p1                                               79.55%    failed      0.30%
+  48  Eukaryota-Chlorophyta-Nephroselmidophyceae-NA-NA-Nephroselmis_pyriformis_MMETSP0034_c1670_g1_i1.p1                                 90.20%    failed      1.48%
+  49  Eukaryota-Choanoflagellata-Choanoflagellata-Choanoflagellata-NA-Acanthoeca_sp_MMETSP0105_c23102_g1_i1.p1                           80.75%    passed     74.71%
+  50  Eukaryota-Choanoflagellata-Choanoflagellata-Choanoflagellata-Salpingoecidae-Monosiga_brevicollis_XP_001749289.1                    81.59%    failed      0.08%
+  51  Eukaryota-Choanoflagellata-Choanoflagellata-Choanoflagellata-Salpingoecidae-Salpingoeca_rosetta_XP_004990414.1                     80.80%    passed     58.08%
+  52  Eukaryota-Chordata-Actinopteri-Clupeiformes-Clupeidae-Clupea_harengus_XP_012681911.1                                               78.56%    passed      9.89%
+  53  Eukaryota-Chordata-Actinopteri-Cypriniformes-Cyprinidae-Carassius_auratus_XP_026077728.1                                           79.45%    passed      8.04%
+  54  Eukaryota-Chordata-Actinopteri-Cypriniformes-Cyprinidae-Cyprinus_carpio_XP_018918923.1                                             77.61%    failed      2.69%
+  55  Eukaryota-Chordata-Actinopteri-Cypriniformes-Cyprinidae-Danio_rerio_NP_001003595.1                                                 80.10%    passed      8.47%
+  56  Eukaryota-Chordata-Actinopteri-Cypriniformes-Cyprinidae-Sinocyclocheilus_anshuiensis_XP_016357519.1                                79.75%    failed      4.38%
+  57  Eukaryota-Chordata-Amphibia-Anura-Pipidae-Xenopus_laevis_XP_018089471.1                                                            80.10%    passed     91.73%
+  58  Eukaryota-Chordata-Chondrichthyes-Orectolobiformes-Rhincodontidae-Rhincodon_typus_XP_020386355.1                                   80.00%    failed      4.95%
+  59  Eukaryota-Chordata-Cladistia-Polypteriformes-Polypteridae-Erpetoichthys_calabaricus_XP_028647645.1                                 80.60%    passed     68.40%
+  60  Eukaryota-Chordata-Mammalia-Lagomorpha-Ochotonidae-Ochotona_princeps_XP_004592919.1                                                80.05%    passed      9.33%
+  61  Eukaryota-Chordata-Mammalia-Rodentia-Caviidae-Cavia_porcellus_XP_003464829.1                                                       80.05%    passed     68.87%
+  62  Eukaryota-Chordata-NA-NA-Branchiostomidae-Branchiostoma_belcheri_XP_019641328.1                                                    78.11%    passed     13.60%
+  63  Eukaryota-Chromeraceae-NA-NA-NA-Chromera_velia_MMETSP0290_c38251_g1_i1.p1                                                          80.40%    passed     74.90%
+  64  Eukaryota-Chromeraceae-NA-NA-NA-Vitrella_brassicaformis_MMETSP1451_c3938_g1_i1.p1                                                  73.68%    passed      5.62%
+  65  Eukaryota-Ciliophora-NA-Unranked-NA-Mesodinium_pulex_MMETSP0467_c32978_g1_i1.p2                                                    84.83%    failed      1.70%
+  66  Eukaryota-Ciliophora-NA-Unranked-NA-Strombidinopsis_acuminatum_MMETSP0126_c20788_g1_i1.p1                                          90.90%    failed      1.46%
+  67  Eukaryota-Ciliophora-NA-Unranked-NA-Tiarina_fusus_MMETSP0472_c9038_g1_i1.p1                                                        77.96%    passed     25.55%
+  68  Eukaryota-Cnidaria-Anthozoa-Actiniaria-Edwardsiidae-Nematostella_vectensis_XP_001623376.1                                          81.19%    passed     54.01%
+  69  Eukaryota-Cnidaria-Anthozoa-Alcyonacea-Nephtheidae-Dendronephthya_gigantea_XP_028406646.1                                          80.15%    passed     48.03%
+  70  Eukaryota-Cnidaria-Anthozoa-Scleractinia-Acroporidae-Acropora_digitifera_XP_015752245.1                                            81.29%    passed     61.09%
+  71  Eukaryota-Cnidaria-Anthozoa-Scleractinia-Merulinidae-Orbicella_faveolata_XP_020609505.1                                            81.14%    passed     76.55%
+  72  Eukaryota-Cnidaria-Anthozoa-Scleractinia-Pocilloporidae-Stylophora_pistillata_XP_022799883.1                                       81.19%    passed     92.87%
+  73  Eukaryota-Cnidaria-Hydrozoa-Anthoathecata-Hydridae-Hydra_magnipapillata_jgiHma2213621                                              82.29%    passed      9.73%
+  74  Eukaryota-Cnidaria-Hydrozoa-Anthoathecata-Hydridae-Hydra_vulgaris_XP_002160275.3                                                   80.65%    failed      2.67%
+  75  Eukaryota-Cryptophyta-NA-Goniomondales-NA-Goniomonas_pacifica_MMETSP0108_c36213_g1_i1.p1                                           92.04%    passed     37.61%
+  76  Eukaryota-Cryptophyta-NA-Pyrenomonadales-NA-Geminigera_cryophila_MMETSP0799_c2118_g1_i1.p1                                         76.07%    failed      0.07%
+  77  Eukaryota-Cryptophyta-NA-Pyrenomonadales-NA-Geminigera_sp_MMETSP1102_c12137_g1_i1.p1                                               81.69%    passed     58.84%
+  78  Eukaryota-Echinodermata-Asteroidea-Valvatida-Acanthasteridae-Acanthaster_planci_XP_022085021.1                                     75.22%    failed      4.61%
+  79  Eukaryota-Echinodermata-Echinoidea-Echinoida-Strongylocentrotidae-Strongylocentrotus_purpuratus_XP_792609.1                        80.20%    passed     28.97%
+  80  Eukaryota-Entamoebidae-NA-NA-NA-Entamoeba_invadens_XP_004254770.1                                                                  84.08%    failed      0.04%
+  81  Eukaryota-Entamoebidae-NA-NA-NA-Entamoeba_nuttalli_XP_008859191.1                                                                  82.49%    failed      0.00%
+  82  Eukaryota-Euglenida-NA-Eutreptiales-NA-Eutreptiella_gymnastica-like_MMETSP0809_c17111_g1_i1.p1                                     81.34%    failed      4.75%
+  83  Eukaryota-Euglenida-NA-Eutreptiales-NA-Eutreptiella_gymnastica_MMETSP0039_c71826_g1_i1.p1                                          81.14%    passed     16.08%
+  84  Eukaryota-Euglenida-NA-NA-Unranked-Neobodo_designis_MMETSP1114_c4163_g1_i1.p1                                                      76.07%    failed      0.00%
+  85  Eukaryota-Glaucophyta-Glaucophyta-Gloeochaetales-Gloeochaetaceae-Gloeochaete_wittrockiana_MMETSP1089_c44705_g1_i1.p1               85.17%    passed     39.00%
+  86  Eukaryota-Glaucophyta-Glaucophyta-NA-Cyanophoraceae-Cyanophora_paradoxa_tig00000037_g10087.t1                                      76.42%    failed      1.94%
+  87  Eukaryota-Glaucophyta-Glaucophyta-NA-NA-Cyanoptyche_gloeocystis_MMETSP1086_c23221_g1_i1.p1                                         87.81%    passed     66.14%
+  88  Eukaryota-Haptophyta-NA-Phaeocystales-Phaeocystaceae-Phaeocystis_sp_MMETSP1162_c30239_g1_i1.p1                                     75.77%    failed      0.00%
+  89  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Calcidiscus_leptoporus_MMETSP1334_c40460_g1_i1.p1                                          80.55%    failed      0.00%
+  90  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Coccolithus_pelagicussspbraarudi_MMETSP0164_c1128_g1_i1.p1                                 78.76%    failed      0.00%
+  91  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Imantonia_sp_MMETSP1474_c10820_g1_i1.p1                                                    82.39%    failed      2.98%
+  92  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Pleurochrysis_carterae_MMETSP1136_c7168_g1_i1.p1                                           79.30%    failed      0.00%
+  93  Eukaryota-Haptophyta-NA-Prymnesiales-NA-Prymnesium_parvum_MMETSP1083_c4019_g1_i1.p1                                                81.49%    failed      0.51%
+  94  Eukaryota-Haptophyta-NA-Unranked-NA-Scyphosphaera_apsteinii_MMETSP1333_c20058_g1_i1.p1                                             79.65%    failed      1.43%
+  95  Eukaryota-Hemichordata-Enteropneusta-NA-Harrimaniidae-Saccoglossus_kowalevskii_XP_002741956.1                                      80.65%    passed     40.68%
+  96  Eukaryota-Heterolobosea-NA-NA-NA-Percolomonas_cosmopolitus_MMETSP0759_c1668_g1_i1.p1                                               81.59%    passed     21.53%
+  97  Eukaryota-Heterolobosea-NA-NA-NA-Percolomonas_cosmopolitus_MMETSP0759_c2254_g1_i1.p1                                               81.59%    passed     24.76%
+  98  Eukaryota-Heterolobosea-NA-NA-Vahlkampfiidae-Naegleria_gruberi_jgi70056                                                            80.65%    passed     15.92%
+  99  Eukaryota-Heterolobosea-NA-NA-Vahlkampfiidae-Naegleria_gruberi_XP_002678622.1                                                      76.17%    failed      0.00%
+ 100  Eukaryota-Longamoebia-Longamoebia-Longamoebia-Acanthamoebidae-Acanthamoeba_castellanii_XP_004334491.1                              81.64%    passed     70.88%
+ 101  Eukaryota-Longamoebia-Longamoebia-Longamoebia-Acanthamoebidae-Acanthamoeba_castellanii_XP_004344591.1                              81.14%    passed     54.62%
+ 102  Eukaryota-Mesomycetozoea-Ichthyosporea-NA-NA-Capsaspora_owczarzaki_XP_011269989.1                                                  75.92%    failed      0.41%
+ 103  Eukaryota-Mollusca-Bivalvia-Ostreoida-Ostreidae-Crassostrea_gigas_XP_011454239.1                                                   80.55%    passed     47.34%
+ 104  Eukaryota-Mollusca-Bivalvia-Ostreoida-Ostreidae-Crassostrea_virginica_XP_022316923.1                                               80.55%    passed     48.00%
+ 105  Eukaryota-Mollusca-Bivalvia-Pectinoida-Pectinidae-Mizuhopecten_yessoensis_XP_021352703.1                                           80.75%    passed     17.81%
+ 106  Eukaryota-Mollusca-Cephalopoda-Octopoda-Octopodidae-Octopus_bimaculoides_XP_014771650.1                                            79.60%    failed      2.31%
+ 107  Eukaryota-Mollusca-Gastropoda-Aplysiida-Aplysiidae-Aplysia_californica_XP_005098146.1                                              79.30%    passed     26.08%
+ 108  Eukaryota-Mollusca-Gastropoda-NA-Planorbidae-Biomphalaria_glabrata_XP_013069699.1                                                  77.61%    failed      2.43%
+ 109  Eukaryota-Nematoda-Chromadorea-Rhabditida-Onchocercidae-Loa_loa_XP_003136892.1                                                     81.44%    passed     83.70%
+ 110  Eukaryota-Nematoda-Chromadorea-Rhabditida-Rhabditidae-Caenorhabditis_briggsae_XP_002645069.1                                       82.39%    passed     20.49%
+ 111  Eukaryota-Nematoda-Chromadorea-Rhabditida-Rhabditidae-Caenorhabditis_elegans_NP_509283.1                                           82.34%    failed      3.37%
+ 112  Eukaryota-Nematoda-Chromadorea-Rhabditida-Strongyloididae-Strongyloides_ratti_XP_024502210.1                                       81.19%    failed      0.07%
+ 113  Eukaryota-Nematoda-Chromadorea-Strongylida-Ancylostomatidae-Necator_americanus_XP_013292512.1                                      82.89%    failed      0.47%
+ 114  Eukaryota-Nematoda-Chromadorea-Strongylida-Ancylostomatidae-Necator_americanus_XP_013298059.1                                      60.60%    passed     37.74%
+ 115  Eukaryota-Nematoda-Enoplea-Trichinellida-Trichinellidae-Trichinella_spiralis_XP_003375638.1                                        72.94%    passed     23.93%
+ 116  Eukaryota-Placozoa-NA-NA-Trichoplacidae-Trichoplax_adhaerens_XP_002110122.1                                                        82.89%    failed      0.02%
+ 117  Eukaryota-Porifera-Demospongiae-Haplosclerida-Niphatidae-Amphimedon_queenslandica_jgiAqu1223145                                    81.39%    passed     15.32%
+ 118  Eukaryota-Priapulida-Priapulimorpha-Priapulimorphida-Priapulidae-Priapulus_caudatus_XP_014667928.1                                 77.76%    passed     54.58%
+ 119  Eukaryota-Retaria-NA-NA-NA-Ammonia_sp_MMETSP1384_c5250_g1_i1.p1                                                                    85.77%    passed     25.17%
+ 120  Eukaryota-Retaria-NA-NA-NA-Elphidium_margaritaceum_MMETSP1385_c8085_g1_i1.p1                                                       86.97%    passed     30.49%
+ 121  Eukaryota-Retaria-NA-NA-NA-Sorites_sp_MMETSP0191_c81405_g1_i1.p1                                                                   89.00%    passed     55.67%
+ 122  Eukaryota-Rhodophyta-Bangiophyceae-Cyanidiales-Cyanidiaceae-Cyanidioschyzon_merolae_CmerSOOS_G836.1                                73.88%    failed      0.00%
+ 123  Eukaryota-Rhodophyta-Bangiophyceae-Cyanidiales-Cyanidiaceae-Cyanidioschyzon_merolae_XP_005538317.1                                 74.08%    failed      0.00%
+ 124  Eukaryota-Rhodophyta-Bangiophyceae-Cyanidiales-Cyanidiaceae-Galdieria_sulphuraria_Gsulp5572_G1941.1                                75.37%    failed      3.45%
+ 125  Eukaryota-Rhodophyta-Bangiophyceae-Cyanidiales-Cyanidiaceae-Galdieria_sulphuraria_GsulpSAG21_G3687.1                               81.19%    passed     29.71%
+ 126  Eukaryota-Rhodophyta-Bangiophyceae-NA-NA-Rhodosorus_marinus_MMETSP0011_c591_g1_i1.p1                                               80.00%    failed      0.11%
+ 127  Eukaryota-Rhodophyta-Bangiophyceae-Porphyridiales-Porphyridiaceae-Porphyridium_aerugineum_MMETSP0313_c9043_g1_i1.p1                82.94%    passed      7.95%
+ 128  Eukaryota-Rhodophyta-Bangiophyceae-Porphyridiales-Porphyridiaceae-Porphyridium_purpureum_3569.6                                    76.42%    passed     10.04%
+ 129  Eukaryota-Rhodophyta-Compsopogonophyceae-NA-NA-Madagascaria_erythrocladiodes_MMETSP1450_c37964_g1_i1.p3                            83.38%    failed      0.04%
+ 130  Eukaryota-Rhodophyta-Florideophyceae-Gigartinales-Gigartinaceae-Chondrus_crispus_XP_005714582.1                                    81.00%    passed     21.72%
+ 131  Eukaryota-Stramenopiles-Coscinodiscophyceae-Chaetocerotales-Chaetocerotaceae-Chaetoceros_sp_MMETSP1429_c5708_g1_i1.p1              74.38%    failed      0.56%
+ 132  Eukaryota-Stramenopiles-Coscinodiscophyceae-Leptocylindrales-Leptocylindraceae-Leptocylindrus_danicus_MMETSP1362_c23386_g1_i1.p1   79.35%    passed     52.49%
+ 133  Eukaryota-Stramenopiles-Labyrinthista-NA-NA-Thraustochytrium_sp_MMETSP0198_c6227_g1_i1.p1                                          79.15%    passed     12.28%
+ 134  Eukaryota-Stramenopiles-NA-Bicosoecida-Cafeteriaceae-Cafeteria_sp_MMETSP1104_c2797_g1_i1.p1                                        81.04%    passed     71.85%
+ 135  Eukaryota-Stramenopiles-NA-Bicosoecida-NA-Bicosoecid_sp_MMETSP0115_c9731_g1_i1.p1                                                  79.60%    failed      3.70%
+ 136  Eukaryota-Stramenopiles-NA-NA-Blastocystidae-Blastocystis_hominis_XP_012897535.1                                                   49.40%    failed      0.32%
+ 137  Eukaryota-Stramenopiles-NA-NA-Blastocystidae-Blastocystis_sp._subtype_4_XP_014528882.1                                             82.29%    passed     12.25%
+ 138  Eukaryota-Stramenopiles-NA-NA-NA-Bolidomonas_pacifica_MMETSP1319_c12770_g1_i1.p1                                                   79.90%    passed     34.43%
+ 139  Eukaryota-Stramenopiles-NA-NA-NA-Fibrocapsa_japonica_MMETSP1339_c17132_g1_i1.p1                                                    84.28%    passed     29.73%
+ 140  Eukaryota-Stramenopiles-NA-NA-NA-Licmophora_paradoxa_MMETSP1360_c4488_g1_i1.p1                                                     79.95%    passed     45.74%
+ 141  MSTRG.2459.4.p1                                                                                                                    81.59%    failed      0.90%
+ 142  MSTRG.971.1.p1                                                                                                                     77.96%    passed     31.04%
+ 143  Paulinella_chromatophora_CCAC0185_nuclear___scaffold15035-m93542                                                                   84.78%    passed      5.59%
+ 144  Paulinella_chromatophora_CCAC0185_nuclear___scaffold7693-m61014                                                                    76.97%    failed      3.47%
+ 145  Paulinella_ovalis_nuclear_SingleCell___SAG2_utg7180000020806.g10099.t1                                                             86.17%    failed      1.87%
+ 146  Paulinella_ovalis_nuclear_SingleCell___SAG4_contig00234.g378.t1                                                                    83.33%    passed     11.12%
+WARNING: 145 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                                                                              80.37%  64 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Stygamoeba_regulata_MMETSP0447_c7894_g1_i1.p1 is identical to Eukaryota-Amoebozoa-NA-NA-Paramoebidae-Mayorella_sp_MMETSP0417_c13781_g1_i1.p1 but kept for subsequent analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.309 seconds
+Generating 2000 samples for ultrafast bootstrap (seed: 750729)...
+
+NOTE: 248 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 6 CPU cores
+2 trees examined
+Threads: 1 / Time: 6.364 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -114356
+Threads: 2 / Time: 2.503 sec / Speedup: 2.542 / Efficiency: 127% / LogL: -114356
+Threads: 3 / Time: 1.649 sec / Speedup: 3.859 / Efficiency: 129% / LogL: -114356
+Threads: 4 / Time: 1.286 sec / Speedup: 4.948 / Efficiency: 124% / LogL: -114356
+Threads: 5 / Time: 1.051 sec / Speedup: 6.054 / Efficiency: 121% / LogL: -114356
+Threads: 6 / Time: 0.879 sec / Speedup: 7.242 / Efficiency: 121% / LogL: -114356
+BEST NUMBER OF THREADS: 6
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -97644.436
+2. Current log-likelihood: -90807.826
+3. Current log-likelihood: -90710.426
+4. Current log-likelihood: -90710.085
+Optimal log-likelihood: -90709.996
+Site proportion and rates:  (0.041,0.042) (0.052,0.144) (0.077,0.284) (0.093,0.440) (0.140,0.637) (0.247,1.105) (0.349,1.620)
+Parameters optimization took 4 rounds (21.511 sec)
+Computing ML distances based on estimated model parameters... 20.348 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.023 seconds
+Log-likelihood of BIONJ tree: -90703.760
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 28.205 second
+Computing log-likelihood of 98 initial trees ... 80.732 seconds
+Current best score: -90703.760
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -90549.587
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -90532.178
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -90516.234
+Iteration 10 / LogL: -90530.953 / Time: 0h:9m:7s
+Iteration 20 / LogL: -90566.814 / Time: 0h:10m:37s
+Finish initializing candidate tree set (20)
+Current best tree score: -90516.234 / CPU time: 588.873
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -90512.659
+Iteration 30 / LogL: -90517.897 / Time: 0h:12m:3s (0h:40m:25s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -90507.349
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 38: -90506.632
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -90504.621
+Iteration 40 / LogL: -90504.621 / Time: 0h:14m:0s (0h:35m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -90501.457
+Iteration 50 / LogL: -90512.140 / Time: 0h:15m:51s (0h:31m:30s left)
+Log-likelihood cutoff on original alignment: -90595.260
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 52: -90499.753
+Iteration 60 / LogL: -90506.279 / Time: 0h:18m:15s (0h:28m:19s left)
+Iteration 70 / LogL: -90501.426 / Time: 0h:20m:21s (0h:24m:4s left)
+Iteration 80 / LogL: -90606.467 / Time: 0h:22m:13s (0h:20m:10s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 81: -90499.431
+Iteration 90 / LogL: -90540.508 / Time: 0h:24m:12s (0h:24m:39s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -90499.341
+Iteration 100 / LogL: -90499.341 / Time: 0h:25m:59s (0h:21m:11s left)
+Log-likelihood cutoff on original alignment: -90593.303
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.990
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -90499.266
+Iteration 110 / LogL: -90499.266 / Time: 0h:28m:0s (0h:23m:2s left)
+BETTER TREE FOUND at iteration 113: -90499.258
+Iteration 120 / LogL: -90505.009 / Time: 0h:29m:45s (0h:23m:10s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 125: -90497.206
+Iteration 130 / LogL: -90499.272 / Time: 0h:31m:43s (0h:23m:17s left)
+Iteration 140 / LogL: -90509.857 / Time: 0h:33m:35s (0h:20m:28s left)
+Iteration 150 / LogL: -90504.913 / Time: 0h:35m:27s (0h:17m:47s left)
+Log-likelihood cutoff on original alignment: -90593.303
+Iteration 160 / LogL: -90499.635 / Time: 0h:37m:35s (0h:15m:19s left)
+Iteration 170 / LogL: -90506.591 / Time: 0h:39m:19s (0h:12m:45s left)
+Iteration 180 / LogL: -90507.816 / Time: 0h:41m:17s (0h:10m:21s left)
+Iteration 190 / LogL: -90508.787 / Time: 0h:43m:8s (0h:7m:58s left)
+UPDATE BEST LOG-LIKELIHOOD: -90497.200
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 195: -90496.851
+Iteration 200 / LogL: -90539.575 / Time: 0h:45m:10s (0h:21m:30s left)
+Log-likelihood cutoff on original alignment: -90593.303
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 210 / LogL: -90512.216 / Time: 0h:47m:7s (0h:20m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 217: -90496.486
+Iteration 220 / LogL: -90507.385 / Time: 0h:49m:18s (0h:21m:47s left)
+Iteration 230 / LogL: -90500.146 / Time: 0h:51m:15s (0h:19m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 235: -90496.255
+Iteration 240 / LogL: -90498.912 / Time: 0h:53m:9s (0h:21m:5s left)
+Iteration 250 / LogL: -90504.799 / Time: 0h:55m:8s (0h:18m:47s left)
+Log-likelihood cutoff on original alignment: -90593.303
+Iteration 260 / LogL: -90509.170 / Time: 0h:56m:54s (0h:16m:26s left)
+UPDATE BEST LOG-LIKELIHOOD: -90496.246
+Iteration 270 / LogL: -90499.886 / Time: 0h:58m:44s (0h:14m:10s left)
+Iteration 280 / LogL: -90565.172 / Time: 1h:0m:44s (0h:11m:57s left)
+Iteration 290 / LogL: -90517.542 / Time: 1h:2m:25s (0h:9m:42s left)
+Iteration 300 / LogL: -90530.925 / Time: 1h:4m:26s (0h:7m:31s left)
+Log-likelihood cutoff on original alignment: -90593.303
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 310 / LogL: -90499.645 / Time: 1h:6m:43s (0h:19m:24s left)
+Iteration 320 / LogL: -90524.497 / Time: 1h:8m:40s (0h:17m:11s left)
+Iteration 330 / LogL: -90506.333 / Time: 1h:10m:36s (0h:15m:0s left)
+TREE SEARCH COMPLETED AFTER 336 ITERATIONS / Time: 1h:11m:41s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -90496.246
+2. Current log-likelihood: -90496.207
+3. Current log-likelihood: -90496.159
+4. Current log-likelihood: -90496.108
+5. Current log-likelihood: -90496.052
+6. Current log-likelihood: -90495.982
+7. Current log-likelihood: -90495.933
+8. Current log-likelihood: -90495.882
+9. Current log-likelihood: -90495.830
+10. Current log-likelihood: -90495.778
+11. Current log-likelihood: -90495.727
+12. Current log-likelihood: -90495.672
+13. Current log-likelihood: -90495.598
+14. Current log-likelihood: -90495.547
+15. Current log-likelihood: -90495.493
+16. Current log-likelihood: -90495.440
+17. Current log-likelihood: -90495.383
+18. Current log-likelihood: -90495.303
+19. Current log-likelihood: -90495.226
+20. Current log-likelihood: -90495.167
+21. Current log-likelihood: -90495.086
+22. Current log-likelihood: -90495.027
+23. Current log-likelihood: -90494.961
+24. Current log-likelihood: -90494.877
+25. Current log-likelihood: -90494.810
+26. Current log-likelihood: -90494.719
+27. Current log-likelihood: -90494.632
+28. Current log-likelihood: -90494.568
+29. Current log-likelihood: -90494.502
+30. Current log-likelihood: -90494.435
+31. Current log-likelihood: -90494.371
+32. Current log-likelihood: -90494.300
+33. Current log-likelihood: -90494.242
+34. Current log-likelihood: -90494.171
+35. Current log-likelihood: -90494.114
+36. Current log-likelihood: -90494.044
+37. Current log-likelihood: -90493.989
+38. Current log-likelihood: -90493.922
+39. Current log-likelihood: -90493.866
+40. Current log-likelihood: -90493.801
+41. Current log-likelihood: -90493.754
+42. Current log-likelihood: -90493.686
+43. Current log-likelihood: -90493.631
+44. Current log-likelihood: -90493.580
+45. Current log-likelihood: -90493.523
+46. Current log-likelihood: -90493.484
+47. Current log-likelihood: -90493.425
+48. Current log-likelihood: -90493.387
+49. Current log-likelihood: -90493.331
+50. Current log-likelihood: -90493.312
+51. Current log-likelihood: -90493.270
+52. Current log-likelihood: -90493.252
+53. Current log-likelihood: -90493.197
+54. Current log-likelihood: -90493.179
+55. Current log-likelihood: -90493.140
+56. Current log-likelihood: -90493.126
+57. Current log-likelihood: -90493.096
+58. Current log-likelihood: -90493.068
+59. Current log-likelihood: -90493.052
+60. Current log-likelihood: -90493.023
+61. Current log-likelihood: -90492.996
+62. Current log-likelihood: -90492.981
+63. Current log-likelihood: -90492.952
+64. Current log-likelihood: -90492.926
+65. Current log-likelihood: -90492.912
+66. Current log-likelihood: -90492.886
+67. Current log-likelihood: -90492.871
+68. Current log-likelihood: -90492.832
+69. Current log-likelihood: -90492.818
+70. Current log-likelihood: -90492.807
+71. Current log-likelihood: -90492.781
+72. Current log-likelihood: -90492.769
+73. Current log-likelihood: -90492.743
+74. Current log-likelihood: -90492.731
+75. Current log-likelihood: -90492.704
+76. Current log-likelihood: -90492.693
+77. Current log-likelihood: -90492.669
+Optimal log-likelihood: -90492.656
+Site proportion and rates:  (0.031,0.023) (0.039,0.101) (0.062,0.212) (0.126,0.380) (0.160,0.628) (0.372,1.169) (0.211,1.896)
+Parameters optimization took 77 rounds (331.795 sec)
+BEST SCORE FOUND : -90492.656
+Creating bootstrap support values...
+Split supports printed to NEXUS file K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+Total tree length: 132.978
+
+Total number of iterations: 336
+CPU time used for tree search: 23826.932 sec (6h:37m:6s)
+Wall-clock time used for tree search: 4252.704 sec (1h:10m:52s)
+Total CPU time used: 26111.561 sec (7h:15m:11s)
+Total wall-clock time used: 4635.205 sec (1h:17m:15s)
+
+Computing bootstrap consensus tree...
+Reading input file K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex...
+146 taxa and 1087 splits.
+Consensus tree written to K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Reading input trees file K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+Log-likelihood of consensus tree: -90494.991
+
+Analysis results written to: 
+  IQ-TREE report:                K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.iqtree
+  Maximum-likelihood tree:       K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.treefile
+  Likelihood distances:          K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.splits.nex
+  Consensus tree:                K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.contree
+  Screen log file:               K12304.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.log
+
+Date and Time: Wed Oct 13 00:18:14 2021

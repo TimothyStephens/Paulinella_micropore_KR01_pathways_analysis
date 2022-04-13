@@ -1,0 +1,18 @@
+public static Colour? Format(object attribute)
+{
+    if (attribute is string attributeValue)
+    {
+        if (attributeValue == "Yes")
+        {
+            return Colours.Purple;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    else
+    {
+        return null;
+    }
+}

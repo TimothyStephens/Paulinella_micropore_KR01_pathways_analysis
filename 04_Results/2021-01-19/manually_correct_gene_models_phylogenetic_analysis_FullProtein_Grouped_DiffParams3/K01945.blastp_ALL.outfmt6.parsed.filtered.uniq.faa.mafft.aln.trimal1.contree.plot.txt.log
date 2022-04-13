@@ -1,0 +1,1164 @@
+TreeViewer v1.2.2 (command-line v1.1.1.0)
+
+Type "help" for a list of available commands
+
+>open K01945.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.trimal1.contree
+
+  Suggested modules:
+
+    Consensus (32914d41-b182-461e-b7c6-5f0263cc1ccd)
+    Radial (95b61284-b870-48b9-b51c-3276f7d89df1)
+
+  Would you like to load the suggested modules? [Y(es)/N(o)] Y
+
+  Options for module Consensus (32914d41-b182-461e-b7c6-5f0263cc1ccd):
+
+    No options available
+
+
+  Options for module Radial (95b61284-b870-48b9-b51c-3276f7d89df1):
+
+    ┌─────── Tree size ────────┐
+    │ #1   Width:    1540      │
+    │ #2   Height:    1540     │
+    └──────────────────────────┘
+    ┌─────── Tree area ────────┐
+    │ #3   Start angle:    0   │
+    │ #4   Sweep angle:    360 │
+    └──────────────────────────┘
+
+>
+>
+>module enable Rectangular
+
+  Options for module Rectangular (68e25ec6-5911-4741-8547-317597e1b792):
+
+    ┌───── Tree size ──────┐
+    │ #1   Width:    2738  │
+    │ #2   Height:    1540 │
+    └──────────────────────┘
+    ┌────── Rotation ──────┐
+    │ #3   Rotation:    0  │
+    └──────────────────────┘
+
+>option select #1
+
+  Selected option #1 Width
+
+  Range: 0 - Infinity
+
+>option set 3240
+>update
+>
+>module enable Reroot tree
+
+  Options for module Reroot tree (c6f96861-11c0-4853-9738-6a90cc81d660):
+
+    #1   Rooting mode:    Outgroup ▼
+    #2   Outgroup:    LCA of 2 nodes
+    #3   Position:    0.50
+
+>option select #1
+
+  Selected option #1 Rooting mode
+
+  Possible values:
+    Mid-point    Outgroup     
+
+>option set Mid-point
+>update
+>
+>module enable Branches
+
+  Options for module Branches (7c767b07-71be-48b2-8753-b27f3e973570):
+
+    #1   √ Root branch
+    ┌─────────── Style ───────────┐
+    │ #2   Shape:    0.00         │
+    │ #3   √ Auto elbow           │
+    └─────────────────────────────┘
+    #5   Rounding:    0.00
+    ┌──────── Appearance ─────────┐
+    │ #6   □ Auto colour by node  │
+    │ #8   Colour:    #000000  …  │
+    │ #9   Line weight:    1  …   │
+    │ #10  Line cap:    Round ▼   │
+    └─────────────────────────────┘
+
+>option select #1
+
+  Selected option #1 Root branch
+
+  Possible values:
+    true     false    
+
+>option set true
+>option select #2
+
+  Selected option #2 Shape
+
+  Range: 0.00 - 2.00
+
+>option set 0.0
+>option select #3
+
+  Selected option #3 Auto elbow
+
+  Possible values:
+    true     false    
+
+>option set true
+>update
+>
+>module enable Labels 
+
+  Options for module Labels (ac496677-2650-4d92-8646-0812918bab03):
+
+    #1   Show on:    Leaves ▼
+    #2   √ Exclude cartoon nodes
+    ┌────────────────── Position ──────────────────┐
+    │ #3   Anchor:    Node ▼                       │
+    │ #4   Position:    5, 0                       │
+    │ #5   Alignment:    Default ▼                 │
+    └──────────────────────────────────────────────┘
+    ┌──────────────── Orientation ─────────────────┐
+    │ #6   Orientation:    0                       │
+    │ #7   Reference:    Branch ▼                  │
+    │ #8   Branch reference:    Rectangular ▼      │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Appearance ─────────────────┐
+    │ #9   Font:    Helvetica 10                   │
+    │ #10  □ Auto colour by node                   │
+    │ #12  Text colour:    #000000  …              │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Attribute ──────────────────┐
+    │ #13  Attribute:    Name ▼                    │
+    │ #14  Attribute type:    String ▼             │
+    │ #15  Attribute format...    [Default String] │
+    └──────────────────────────────────────────────┘
+
+>option select #1
+
+  Selected option #1 Show on
+
+  Possible values:
+    Leaves            Internal nodes    All nodes         
+
+>option set All nodes
+>option select #4
+
+  Selected option #4 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set 8 0
+>option select #13
+
+  Selected option #13 Attribute
+
+  Possible values:
+    Length     Name       Support    
+
+>option set Support
+>update
+>
+>module enable Labels 
+
+  Options for module Labels (ac496677-2650-4d92-8646-0812918bab03):
+
+    #1   Show on:    Leaves ▼
+    #2   √ Exclude cartoon nodes
+    ┌────────────────── Position ──────────────────┐
+    │ #3   Anchor:    Node ▼                       │
+    │ #4   Position:    5, 0                       │
+    │ #5   Alignment:    Default ▼                 │
+    └──────────────────────────────────────────────┘
+    ┌──────────────── Orientation ─────────────────┐
+    │ #6   Orientation:    0                       │
+    │ #7   Reference:    Branch ▼                  │
+    │ #8   Branch reference:    Rectangular ▼      │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Appearance ─────────────────┐
+    │ #9   Font:    Helvetica 10                   │
+    │ #10  □ Auto colour by node                   │
+    │ #12  Text colour:    #000000  …              │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Attribute ──────────────────┐
+    │ #13  Attribute:    Name ▼                    │
+    │ #14  Attribute type:    String ▼             │
+    │ #15  Attribute format...    [Default String] │
+    └──────────────────────────────────────────────┘
+
+>update
+>
+>module enable Node shapes
+
+  Options for module Node shapes (7434420a-1afd-46ee-aeea-75ed8a5eeada):
+
+    #1   Show on:    Leaves ▼
+    ┌─────────────── Position ────────────────┐
+    │ #2   Anchor:    Node ▼                  │
+    │ #3   Orientation reference:    Branch ▼ │
+    │ #4   Branch reference:    Rectangular ▼ │
+    │ #5   Position:    0, 0                  │
+    └─────────────────────────────────────────┘
+    ┌────────────── Appearance ───────────────┐
+    │ #6   Size:    8  …                      │
+    │ #7   Shape:    Polygon ▼                │
+    │ #8   Sides:    5                        │
+    │ #9   √ Star                             │
+    │ #10  Angle:    0                        │
+    │ #11  √ Auto fill colour by node         │
+    │ #12  Fill opacity:    1.00              │
+    └─────────────────────────────────────────┘
+    #14  Stroke thickness:    0
+    #15  □ Auto stroke colour by node
+    #17  Stroke colour:    #000000  … 
+
+>option select #1
+
+  Selected option #1 Show on
+
+  Possible values:
+    Leaves            Internal nodes    All nodes         
+
+>option set Internal nodes
+>option select #6
+
+  Selected option #6 Size
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 10
+>option select #7
+
+  Selected option #7 Shape
+
+  Possible values:
+    Circle     Polygon    
+
+>option set Circle
+>option select #11
+
+  Selected option #11 Auto fill colour by node
+
+  Possible values:
+    true     false    
+
+>option set false
+>option select #13
+
+  Selected option #13 Fill colour
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set #00000000
+>option set attribute number Support
+>option set source TreeView.Node_Shape.txt
+>update
+>
+>module enable Node shapes
+
+  Options for module Node shapes (7434420a-1afd-46ee-aeea-75ed8a5eeada):
+
+    #1   Show on:    Leaves ▼
+    ┌─────────────── Position ────────────────┐
+    │ #2   Anchor:    Node ▼                  │
+    │ #3   Orientation reference:    Branch ▼ │
+    │ #4   Branch reference:    Rectangular ▼ │
+    │ #5   Position:    0, 0                  │
+    └─────────────────────────────────────────┘
+    ┌────────────── Appearance ───────────────┐
+    │ #6   Size:    8  …                      │
+    │ #7   Shape:    Polygon ▼                │
+    │ #8   Sides:    5                        │
+    │ #9   √ Star                             │
+    │ #10  Angle:    0                        │
+    │ #11  √ Auto fill colour by node         │
+    │ #12  Fill opacity:    1.00              │
+    └─────────────────────────────────────────┘
+    #14  Stroke thickness:    0
+    #15  □ Auto stroke colour by node
+    #17  Stroke colour:    #000000  … 
+
+>option select #1
+
+  Selected option #1 Show on
+
+  Possible values:
+    Leaves            Internal nodes    All nodes         
+
+>option set Leaves
+>option select #5
+
+  Selected option #5 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set -10 0
+>option select #6
+
+  Selected option #6 Size
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 12
+>option select #8
+
+  Selected option #8 Sides
+
+  Range: 3 - Infinity
+
+>option set 6
+>option select #9
+
+  Selected option #9 Star
+
+  Possible values:
+    true     false    
+
+>option set false
+>option select #11
+
+  Selected option #11 Auto fill colour by node
+
+  Possible values:
+    true     false    
+
+>option set false
+>option select #13
+
+  Selected option #13 Fill colour
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set #00000000
+>option set attribute string crTP
+>option set source TreeView.Node_Shape.crTP.txt 
+>update
+>
+>module enable Node shapes
+
+  Options for module Node shapes (7434420a-1afd-46ee-aeea-75ed8a5eeada):
+
+    #1   Show on:    Leaves ▼
+    ┌─────────────── Position ────────────────┐
+    │ #2   Anchor:    Node ▼                  │
+    │ #3   Orientation reference:    Branch ▼ │
+    │ #4   Branch reference:    Rectangular ▼ │
+    │ #5   Position:    0, 0                  │
+    └─────────────────────────────────────────┘
+    ┌────────────── Appearance ───────────────┐
+    │ #6   Size:    8  …                      │
+    │ #7   Shape:    Polygon ▼                │
+    │ #8   Sides:    5                        │
+    │ #9   √ Star                             │
+    │ #10  Angle:    0                        │
+    │ #11  √ Auto fill colour by node         │
+    │ #12  Fill opacity:    1.00              │
+    └─────────────────────────────────────────┘
+    #14  Stroke thickness:    0
+    #15  □ Auto stroke colour by node
+    #17  Stroke colour:    #000000  … 
+
+>option select #1
+
+  Selected option #1 Show on
+
+  Possible values:
+    Leaves            Internal nodes    All nodes         
+
+>option set Leaves
+>option select #5
+
+  Selected option #5 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set -22 0
+>option select #6
+
+  Selected option #6 Size
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 12
+>option select #8
+
+  Selected option #8 Sides
+
+  Range: 3 - Infinity
+
+>option set 6
+>option select #9
+
+  Selected option #9 Star
+
+  Possible values:
+    true     false    
+
+>option set false
+>option select #11
+
+  Selected option #11 Auto fill colour by node
+
+  Possible values:
+    true     false    
+
+>option set false
+>option select #13
+
+  Selected option #13 Fill colour
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set #00000000
+>option set attribute string mtTP
+>option set source TreeView.Node_Shape.mtTP.txt
+>update
+>
+>
+>
+>
+>attachment add K01945.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.trimal1.annots.txt
+
+  Enter attachment name: Annotations
+
+  Should the attachment be stored in memory? [Y(es)/N(o)] Y
+
+  Should the results of parsing the attachment be cached? [Y(es)/N(o)] Y
+
+>
+>
+>module enable Parse node states
+
+  Options for module Parse node states (716b55a3-02d9-4007-a830-8326d407b24c):
+
+    ┌─────────────────────────── Parsing ───────────────────────────┐
+    │ #1   Data file:    (None) ▼                                   │
+    │ #2   Lines to skip:    0                                      │
+    │ #3   Separator:    \s                                         │
+    │ #4   √ Regex                                                  │
+    └───────────────────────────────────────────────────────────────┘
+    ┌────────────────────────── Matching ───────────────────────────┐
+    │ #5   Match column:    1                                       │
+    │ #6   Match attribute:    Name ▼                               │
+    │ #7   Match attribute type:    String ▼                        │
+    └───────────────────────────────────────────────────────────────┘
+    ┌──────────────────────── New attribute ────────────────────────┐
+    │ #9   □ Use first row as header                                │
+    │ #10  Column header(s):    State                               │
+    │ Multiple attributes should use the same separator as the data │
+    └───────────────────────────────────────────────────────────────┘
+    #11  Attribute type:     Auto ▼
+
+>option select #1
+
+  Selected option #1 Data file
+
+  Possible values:
+    (None)         Annotations    
+
+>option set Annotations
+>option select #3
+
+  Selected option #3 Separator
+
+>option set \t
+>option select #9
+
+  Selected option #9 Use first row as header
+
+  Possible values:
+    true     false    
+
+>option set true
+>update
+>
+>module enable Propagate attribute
+
+  Options for module Propagate attribute (85eee26d-29b6-4470-8184-f42ebe9a2567):
+
+    ┌────────────── Attribute ───────────────┐
+    │ #1   Attribute:    Alistat_Cr ▼        │
+    │ #2   Attribute type:    Number ▼       │
+    └────────────────────────────────────────┘
+    ┌───────────── Propagation ──────────────┐
+    │ #3   Direction:    From tips to root ▼ │
+    │ #4   Propagation mode:    Average ▼    │
+    │ #6   Default value:    NaN             │
+    │ #8   □ Overwrite existing values       │
+    └────────────────────────────────────────┘
+
+>option select #1
+
+  Selected option #1 Attribute
+
+  Possible values:
+    Alistat_Cr    Color         crTP          Length        Level_1       Level_2       Level_3       Level_4       
+    Level_5       Level_6       mtTP          Name          Support       
+
+>option set Color
+>option select #2
+
+  Selected option #2 Attribute type
+
+  Possible values:
+    String    Number    
+
+>option set String
+>option select #6
+
+  Selected option #6 Default value
+
+>option set ''
+>update
+>
+>module enable Node states
+
+  Options for module Node states (0512b822-044d-4c13-b3bb-bca494c51daa):
+
+    #1   Show on:    Tips ▼
+    #2   √ Exclude cartoon nodes
+    ┌─────────────── Position ────────────────┐
+    │ #3   Anchor:    Node ▼                  │
+    │ #4   Orientation reference:    Branch ▼ │
+    │ #5   Branch reference:    Rectangular ▼ │
+    │ #6   Position:    0, 0                  │
+    └─────────────────────────────────────────┘
+    ┌────────────── Appearance ───────────────┐
+    │ #7   Type:    Pie chart ▼               │
+    │ #8   Width:    8  …                     │
+    │ #10  Height:    8  …                    │
+    │ #11  Angle:    0                        │
+    │ #12  State colours:    #DCDCDC  …       │
+    │ #13  Stroke thickness:    0             │
+    └─────────────────────────────────────────┘
+    #14  Stroke colour:    #000000
+    ┌─────────────── Attribute ───────────────┐
+    │ #15  Attribute:    Name ▼               │
+    │ #16  Attribute type:    String ▼        │
+    │ #17  Missing data:    Ambiguous state ▼ │
+    └─────────────────────────────────────────┘
+
+>option select #3
+
+  Selected option #3 Anchor
+
+  Possible values:
+    Node          Mid-branch    Origin        
+
+>option set Origin
+>option select #6
+
+  Selected option #6 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set 4120 0
+>option select #7
+
+  Selected option #7 Type
+
+  Possible values:
+    Pie chart    Rectangle    Wedge        
+
+>option set Rectangle
+>option select #8
+
+  Selected option #8 Width
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 24
+>option select #10
+
+  Selected option #10 Height
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 12
+>option select #12
+
+  Selected option #12 State colours
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set attribute number AliStat_Cr
+>option set source TreeView.Node_states_AliStat.txt
+>option select #15
+
+  Selected option #15 Attribute
+
+  Possible values:
+    Alistat_Cr    Color         crTP          Length        Level_1       Level_2       Level_3       Level_4       
+    Level_5       Level_6       mtTP          Name          Support       
+
+>option set AliStat_Cr
+>option select #16
+
+  Selected option #16 Attribute type
+
+  Possible values:
+    String    Number    
+
+>option set Number
+>update
+>
+>module enable Labels
+
+  Options for module Labels (ac496677-2650-4d92-8646-0812918bab03):
+
+    #1   Show on:    Leaves ▼
+    #2   √ Exclude cartoon nodes
+    ┌────────────────── Position ──────────────────┐
+    │ #3   Anchor:    Node ▼                       │
+    │ #4   Position:    5, 0                       │
+    │ #5   Alignment:    Default ▼                 │
+    └──────────────────────────────────────────────┘
+    ┌──────────────── Orientation ─────────────────┐
+    │ #6   Orientation:    0                       │
+    │ #7   Reference:    Branch ▼                  │
+    │ #8   Branch reference:    Rectangular ▼      │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Appearance ─────────────────┐
+    │ #9   Font:    Helvetica 10                   │
+    │ #10  □ Auto colour by node                   │
+    │ #12  Text colour:    #000000  …              │
+    └──────────────────────────────────────────────┘
+    ┌───────────────── Attribute ──────────────────┐
+    │ #13  Attribute:    Name ▼                    │
+    │ #14  Attribute type:    String ▼             │
+    │ #15  Attribute format...    [Default String] │
+    └──────────────────────────────────────────────┘
+
+>option select #3
+
+  Selected option #3 Anchor
+
+  Possible values:
+    Node                Mid-branch          Centre of leaves    Origin              
+
+>option set Origin
+>option select #4
+
+  Selected option #4 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set 4110 0
+>option select #12
+
+  Selected option #12 Text colour
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set attribute string ''
+>option select #13
+
+  Selected option #13 Attribute
+
+  Possible values:
+    Alistat_Cr    Color         crTP          Length        Level_1       Level_2       Level_3       Level_4       
+    Level_5       Level_6       mtTP          Name          Support       
+
+>option set AliStat_Cr
+>update
+>
+>
+>
+>attachment add K01945.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.trimal1
+
+  Enter attachment name: Alignment
+
+  Should the attachment be stored in memory? [Y(es)/N(o)] Y
+
+  Should the results of parsing the attachment be cached? [Y(es)/N(o)] Y
+
+>
+>
+>module enable Plot alignment
+
+  Options for module Plot alignment (ea7e246b-e93f-4d0d-a67a-88af05479b48):
+
+    ┌─────────────── Sequence alignment ───────────────┐
+    │ #1   FASTA alignment:    (None) ▼                │
+    │ ┌─────────────── Sequence range ───────────────┐ │
+    │ │ #2   Start:    1                             │ │
+    │ │ #3   End:    1                               │ │
+    │ └──────────────────────────────────────────────┘ │
+    └──────────────────────────────────────────────────┘
+    ┌──────────────────── Position ────────────────────┐
+    │ #4   Anchor:    Bottom-center ▼                  │
+    │ #6   Alignment:    Top-center ▼                  │
+    │ #7   Position:    0, 0                           │
+    └──────────────────────────────────────────────────┘
+    ┌───────────────────── Labels ─────────────────────┐
+    │ #8   Label position:    Left ▼                   │
+    │ #9   Label font:    Helvetica-Oblique 6          │
+    │ ┌───────────────── Attribute ──────────────────┐ │
+    │ │ #10  Label attribute:    Name ▼              │ │
+    │ │ #11  Attribute type:    String ▼             │ │
+    │ │ #12  Attribute format...    [Default String] │ │
+    │ └──────────────────────────────────────────────┘ │
+    │ #13  Identity label:    Identity                 │
+    │ #14  Gaps label:    Gaps                         │
+    └──────────────────────────────────────────────────┘
+    ┌────────────────────── Size ──────────────────────┐
+    │ #15  Residue width:    0.25                      │
+    │ #16  Sequence height:    5  …                    │
+    │ #17  Margin:    2  …                             │
+    └──────────────────────────────────────────────────┘
+    ┌──────────────────── Colours ─────────────────────┐
+    │ #18  Colour mode:    By sequence ▼               │
+    │ #19  □ Auto colour by node                       │
+    │ #21  Colour:    #0072B2  …                       │
+    │ #23  Identity colour:    #009E73                 │
+    │ #24  Gaps colour:    #CC79A7                     │
+    └──────────────────────────────────────────────────┘
+    ┌──────────────── Residue letters ─────────────────┐
+    │ #25  □ Draw residue letters                      │
+    └──────────────────────────────────────────────────┘
+
+>option select #1
+
+  Selected option #1 FASTA alignment
+
+  Possible values:
+    (None)         Alignment      Annotations    
+
+>option set Alignment
+>option select #4
+
+  Selected option #4 Anchor
+
+  Possible values:
+    Node             Top-left         Top-center       Top-right        Middle-left      Middle-center    
+    Middle-right     Bottom-left      Bottom-center    Bottom-right     
+
+>option set Top-left
+>option select #6
+
+  Selected option #6 Alignment
+
+  Possible values:
+    Top-left         Top-center       Top-right        Middle-left      Middle-center    Middle-right     
+    Bottom-left      Bottom-center    Bottom-right     
+
+>option set Top-left
+>option select #7
+
+  Selected option #7 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set 3810 -6
+>option select #8
+
+  Selected option #8 Label position
+
+  Possible values:
+    Neither    Left       Right      Both       
+
+>option set Neither
+>option select #15
+
+  Selected option #15 Residue width
+
+  Range: 0 - Infinity
+
+>option set 0.5
+>option select #16
+
+  Selected option #16 Sequence height
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 12
+>option select #17
+
+  Selected option #17 Margin
+
+  Number by node syntax:
+    option set <value>
+      Sets the default value.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set 2
+>option select #21
+
+  Selected option #21 Colour
+
+  Colour by node syntax:
+    option set #RRGGBB
+    option set #RRGGBBAA
+    option set rgb(r, g, b)
+    option set rgba(r, g, b, a)
+      Sets the default colour.
+
+    option set attribute
+      Shows the current values for the attribute type and name.
+
+    option set attribute <attribute type> <attribute name>
+      Sets the attribute type and name. The attribute type must be either string or number.
+
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set attribute string Color
+>option set source TreeView.Plot_alignment.txt
+>option select #23
+
+  Selected option #23 Identity colour
+
+  Colour syntax:
+    • #RRGGBB (hex RGB syntax)
+    • #RRGGBBAA (hex RGBA syntax)
+    • rgb(r, g, b) (0 ≤ r, g, b ≤ 255)
+    • rgb(r, g, b, a) (0 ≤ r, g, b, a ≤ 255)
+
+>option set #66FF00
+>option select #24
+
+  Selected option #24 Gaps colour
+
+  Colour syntax:
+    • #RRGGBB (hex RGB syntax)
+    • #RRGGBBAA (hex RGBA syntax)
+    • rgb(r, g, b) (0 ≤ r, g, b ≤ 255)
+    • rgb(r, g, b, a) (0 ≤ r, g, b, a ≤ 255)
+
+>option set #FF0000
+>update
+>
+>
+>
+>attachment add TreeView.AliStat_Cr_Legend.svg
+
+  Enter attachment name: AliStat_Cr_Legend
+
+  Should the attachment be stored in memory? [Y(es)/N(o)] Y
+
+  Should the results of parsing the attachment be cached? [Y(es)/N(o)] Y
+
+>
+>
+>module enable Legend
+
+  Options for module Legend (06888353-e930-4d08-ab24-5727bced8cd6):
+
+    #1   Markdown source:    [Markdown]
+    #2   Background colour:    #FFFFFF
+    ┌───────────── Text ──────────────┐
+    │ #3   Font size:    14           │
+    │ #4   Colour:      #000000       │
+    └─────────────────────────────────┘
+    ┌──────────── Layout ─────────────┐
+    │ #5   Width:    200              │
+    │ ┌────────── Margin ───────────┐ │
+    │ │ #6   Left:    5             │ │
+    │ │ #7   Top:    5              │ │
+    │ │ #8   Right:    5            │ │
+    │ │ #9   Bottom:    -5          │ │
+    │ └─────────────────────────────┘ │
+    └─────────────────────────────────┘
+    ┌──────────── Border ─────────────┐
+    │ #10  Colour:     #000000        │
+    │ #11  Thickness:     0           │
+    └─────────────────────────────────┘
+    ┌───────── Header lines ──────────┐
+    │ #12  Colour:    #B4B4B4         │
+    │ #13  Thickness:    0            │
+    └─────────────────────────────────┘
+    ┌─────────── Position ────────────┐
+    │ #14  Anchor:    Bottom-center ▼ │
+    │ #16  Alignment:    Top-center ▼ │
+    │ #17  Position:    0, 10         │
+    └─────────────────────────────────┘
+
+>option select #1
+
+  Selected option #1 Markdown source
+
+  Formatter syntax:
+    option set source
+      Opens an external text editor (nano) to edit the source code.
+
+    option set source <file name>
+      Loads the source code from the specified file.
+
+>option set source TreeView.Legend.txt
+>option select #2
+
+  Selected option #2 Background colour
+
+  Colour syntax:
+    • #RRGGBB (hex RGB syntax)
+    • #RRGGBBAA (hex RGBA syntax)
+    • rgb(r, g, b) (0 ≤ r, g, b ≤ 255)
+    • rgb(r, g, b, a) (0 ≤ r, g, b, a ≤ 255)
+
+>option set #FFFFFF00
+>option select #14
+
+  Selected option #14 Anchor
+
+  Possible values:
+    Node             Top-left         Top-center       Top-right        Middle-left      Middle-center    
+    Middle-right     Bottom-left      Bottom-center    Bottom-right     
+
+>option set Top-left
+>option select #16
+
+  Selected option #16 Alignment
+
+  Possible values:
+    Top-left         Top-center       Top-right        Middle-left      Middle-center    Middle-right     
+    Bottom-left      Bottom-center    Bottom-right     
+
+>option set Top-left
+>option select #17
+
+  Selected option #17 Position
+
+  Point syntax:
+    • X, Y
+    • X Y
+    • X	Y
+
+>option set -300 0
+>update
+>
+>
+>
+>module enable Scale bar
+
+  Options for module Scale bar (195bdabf-c5cf-4daf-992f-7a86a600beec):
+
+    ┌────────── Scale ───────────┐
+    │ #1   Scale size:    0.20   │
+    │ #2   Digits:    2          │
+    └────────────────────────────┘
+    ┌──────── Appearance ────────┐
+    │ #3   Line thickness:    1  │
+    │ #4   Colour:    #000000    │
+    │ #5   Font:    Helvetica 10 │
+    └────────────────────────────┘
+    ┌───────── Position ─────────┐
+    │ #6   Position:    0, 0     │
+    │ #7   Angle:    0           │
+    └────────────────────────────┘
+
+>update
+>
+>
+>
+>pdf K01945.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.trimal1.contree.pdf 
+>
+>binary modules loaded K01945.blastp_ALL.outfmt6.parsed.filtered.uniq.faa.mafft.aln.trimal1.contree.tbi
+Would you like to sign the file? [Y(es)/N(o)] Y
+Would you like to include the attachments? [Y(es)/N(o)] Y
+>
+>^D
+>exit

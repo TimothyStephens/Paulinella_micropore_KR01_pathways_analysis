@@ -1,0 +1,43 @@
+=====================================================================
+Slurm config version 0.2
+Starting at Thu 13 Jan 2022 07:37:29 PM EST
+Working directory is /scratch/timothy/projects/0011_Paulinella_micropora_KR01_KEGG_pathway_analysis/03_Analysis/2022-01-13/manually_correct_gene_models
+=====================================================================
+
+[Thu 13 Jan 2022 07:37:30 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/gtf_genome_to_cdna_fasta.pl combined.manually_fixed.gtf Paulinella_micropora_KR01_nuclear.assembly.fasta > combined.manually_fixed.transcripts.fasta
+-parsing cufflinks output: combined.manually_fixed.gtf
+-parsing genome fasta: Paulinella_micropora_KR01_nuclear.assembly.fasta
+-done parsing genome.
+// processing Paulinella_micropora_KR01_nuclear___1694_001715F
+// processing Paulinella_micropora_KR01_nuclear___2063_002085F
+[Thu 13 Jan 2022 07:38:01 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/gtf_to_alignment_gff3.pl combined.manually_fixed.gtf > combined.manually_fixed.transcripts.gff3
+[Thu 13 Jan 2022 07:38:01 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/TransDecoder.LongOrfs -S -m 30 -t combined.manually_fixed.transcripts.fasta > combined.manually_fixed.transcripts.TransDecoder.LongOrfs.log 2>&1
+[Thu 13 Jan 2022 07:38:02 PM EST]      CMD: blastp -query combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep      -db /scratch/timothy/databases/UniProt_2020_05/uniprot_sprot.fasta  -max_target_seqs 1     -outfmt 6 -evalue 1e-5 -num_threads 60     -out combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep.blastp_SwissProt.outfmt6
+Warning: [blastp] Examining 5 or more matches is recommended
+[Thu 13 Jan 2022 07:38:02 PM EST]      CMD: hmmscan --cpu 60 	--domtblout combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep.pfam.domtblout 	/scratch/timothy/databases/PFAM_33.1/Pfam-A.hmm 	combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep 	> combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep.hmmscan.log 2>&1
+[Thu 13 Jan 2022 07:38:16 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/TransDecoder.Predict --single_best_only 	-t combined.manually_fixed.transcripts.fasta 	--retain_blastp_hits combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep.blastp_SwissProt.outfmt6 	--retain_pfam_hits combined.manually_fixed.transcripts.fasta.transdecoder_dir/longest_orfs.pep.pfam.domtblout 	> combined.manually_fixed.transcripts.TransDecoder.Predict.log 2>&1
+[Thu 13 Jan 2022 07:38:21 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/cdna_alignment_orf_to_genome_orf.pl 	combined.manually_fixed.transcripts.fasta.transdecoder.gff3 	combined.manually_fixed.transcripts.gff3 	combined.manually_fixed.transcripts.fasta > combined.manually_fixed.transcripts.fasta.transdecoder.genome.gff3
+
+
+
+	Done.  2 / 2 transcript orfs could be propagated to the genome
+
+[Thu 13 Jan 2022 07:38:21 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/force_start_codon_refinement.pl --gff3_file combined.manually_fixed.transcripts.fasta.transdecoder.gff3 --transcripts combined.manually_fixed.transcripts.fasta > combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.gff3
+
+-number of revised start positions: 0
+[Thu 13 Jan 2022 07:38:21 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/gff3_file_to_proteins.pl --gff3 combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.gff3 --fasta combined.manually_fixed.transcripts.fasta --seqType prot > combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.pep
+
+[Thu 13 Jan 2022 07:38:21 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/gff3_file_to_proteins.pl --gff3 combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.gff3 --fasta combined.manually_fixed.transcripts.fasta --seqType CDS  > combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.cds
+
+[Thu 13 Jan 2022 07:38:21 PM EST]      CMD: /home/timothy/programs/TransDecoder-v5.5.0/util/cdna_alignment_orf_to_genome_orf.pl combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.gff3 combined.manually_fixed.transcripts.gff3 combined.manually_fixed.transcripts.fasta > combined.manually_fixed.transcripts.fasta.transdecoder.forceStart.genome.gff3
+
+
+
+	Done.  2 / 2 transcript orfs could be propagated to the genome
+
+
+=====================================================================
+Started: at Thu 13 Jan 2022 07:37:29 PM EST
+Finished: at Thu 13 Jan 2022 07:38:21 PM EST
+ExitStatus: 0
+=====================================================================

@@ -1,0 +1,283 @@
+### Open tree
+open :TREE:
+Y
+
+# Make tree rectangle shaped
+module enable Rectangular
+option select #1
+option set 3240
+update
+
+# Root tree by midpoint
+module enable Reroot tree
+option select #1
+option set Mid-point
+update
+
+# Set branch shape (make nodes 90 degree angles)
+module enable Branches
+option select #1
+option set true
+option select #2
+option set 0.0
+option select #3
+option set true
+update
+
+# Show node support values
+module enable Labels 
+option select #1
+option set All nodes
+option select #4
+option set 8 0
+option select #13
+option set Support
+update
+
+# Show tip labels
+module enable Labels 
+update
+
+# Add dots to nodes with support >= 95
+module enable Node shapes
+option select #1
+option set Internal nodes
+option select #6
+option set 10
+option select #7
+option set Circle
+option select #11
+option set false
+option select #13
+option set #00000000
+option set attribute number Support
+option set source TreeView.Node_Shape.txt
+update
+
+# Add polygons to tips with crTP
+module enable Node shapes
+option select #1
+option set Leaves
+option select #5
+option set -10 0
+option select #6
+option set 12
+option select #8
+option set 6
+option select #9
+option set false
+option select #11
+option set false
+option select #13
+option set #00000000
+option set attribute string crTP
+option set source TreeView.Node_Shape.crTP.txt 
+update
+
+# Add polygons to tips with mtTP
+module enable Node shapes
+option select #1
+option set Leaves
+option select #5
+option set -22 0
+option select #6
+option set 12
+option select #8
+option set 6
+option select #9
+option set false
+option select #11
+option set false
+option select #13
+option set #00000000
+option set attribute string mtTP
+option set source TreeView.Node_Shape.mtTP.txt
+update
+
+
+
+
+### Attach annotations
+attachment add :ANNOT:
+Annotations
+Y
+Y
+
+# Parse annotation file (will color tips using 'color' column)
+module enable Parse node states
+option select #1
+option set Annotations
+option select #3
+option set \t
+option select #9
+option set true
+update
+
+# Propagate tip color to internal nodes
+module enable Propagate attribute
+option select #1
+option set Color
+option select #2
+option set String
+option select #6
+option set ''
+update
+
+# Add colored boxes using the "AliStat Completeness scores for individual sequences" (Cr)
+module enable Node states
+option select #3
+option set Origin
+option select #6
+option set 4120 0
+option select #7
+option set Rectangle
+option select #8
+option set 24
+option select #10
+option set 12
+option select #12
+option set attribute number AliStat_Cr
+option set source TreeView.Node_states_AliStat.txt
+option select #15
+option set AliStat_Cr
+option select #16
+option set Number
+update
+
+# Add "AliStat_Cr" values over the colored boxes we just added
+module enable Labels
+option select #3
+option set Origin
+option select #4
+option set 4110 0
+option select #12
+option set attribute string ''
+option select #13
+option set AliStat_Cr
+update
+
+
+
+### Attach alignment
+attachment add :ALN:
+Alignment
+Y
+Y
+
+# Add alignment to tree; color alignment using tip colors
+module enable Plot alignment
+option select #1
+option set Alignment
+option select #4
+option set Top-left
+option select #6
+option set Top-left
+option select #7
+option set 3810 -6
+option select #8
+option set Neither
+option select #15
+option set 0.5
+option select #16
+option set 12
+option select #17
+option set 2
+option select #21
+option set attribute string Color
+option set source TreeView.Plot_alignment.txt
+option select #23
+option set #66FF00
+option select #24
+option set #FF0000
+update
+
+
+
+### Attach AliStat Cr score color legend
+attachment add TreeView.AliStat_Cr_Legend.svg
+AliStat_Cr_Legend
+Y
+Y
+
+# Add legend
+module enable Legend
+option select #1
+option set source TreeView.Legend.txt
+option select #2
+option set #FFFFFF00
+option select #14
+option set Top-left
+option select #16
+option set Top-left
+option select #17
+option set -300 0
+update
+
+
+
+### Attach AliStat Histogram Cr plot
+attachment add :ALISTAT_HISTOGRAM_CR_FILE:
+Histogram_Cr
+Y
+Y
+
+# Add legend
+module enable Legend
+option select #1
+option set source TreeView.Legend.Histogram_Cr.txt
+option select #5
+option set 300
+option select #6
+option set 0
+option select #7
+option set 0
+option select #8
+option set 0
+option select #9
+option set 0
+option select #14
+option set Top-left
+option select #16
+option set Top-left
+option select #17
+option set -320 500
+update
+
+
+
+### Attach AliStat Histogram Cc plot
+attachment add :ALISTAT_HISTOGRAM_CC_FILE:
+Histogram_Cc
+Y
+Y
+
+# Add legend
+module enable Legend
+option select #1
+option set source TreeView.Legend.Histogram_Cc.txt
+option select #5
+option set 300
+option select #6
+option set 0
+option select #7
+option set 0
+option select #8
+option set 0
+option select #9
+option set 0
+option select #14
+option set Top-left
+option select #16
+option set Top-left
+option select #17
+option set -320 870
+update
+
+
+
+### Save
+pdf :TREE:.pdf 
+
+binary modules loaded :TREE:.tbi
+Y
+Y

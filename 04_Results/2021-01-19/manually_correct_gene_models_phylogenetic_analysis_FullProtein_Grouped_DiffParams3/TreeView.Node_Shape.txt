@@ -1,0 +1,18 @@
+public static Colour? Format(object attribute)
+{
+    if (attribute is double attributeValue && !double.IsNaN(attributeValue))
+    {
+        if (attributeValue >= 95)
+        {
+            return Colours.Black;
+        }
+        else
+        {
+            return Colour.FromRgba(0, 0, 0, 0);
+        }
+    }
+    else
+    {
+        return null;
+    }
+}
